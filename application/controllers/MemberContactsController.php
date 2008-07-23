@@ -15,6 +15,15 @@ class MemberContactsController extends Vps_Controller_Action_Auto_Grid
     {
         $this->_columns->add(new Vps_Grid_Column_Date('date', 'Date'));
         $this->_columns->add(new Vps_Grid_Column('subject', 'Betreff'));
-        $this->_columns->add(new Vps_Grid_Column('text', 'Text'));
+        $this->_columns->add(new Vps_Grid_Column('text', 'Text'))
+            ->setRenderer('nl2Br')
+            ->setWidth(300);
+    }
+
+    protected function _getWhere()
+    {
+        $ret = parent::_getWhere();
+        $ret['member_id = ?'] = $this->_getParam('member_id');
+        return $ret;
     }
 }

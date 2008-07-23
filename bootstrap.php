@@ -21,7 +21,7 @@ $acl = new Vps_Acl();
 $acl->remove('index');
 
 $acl->add(new Vps_Acl_Resource_MenuUrl('index',
-        array('text'=>'Mitglieder', 'icon'=>'user.png'),
+        array('text'=>'Kunden', 'icon'=>'user.png'),
         '/'));
     $acl->add(new Zend_Acl_Resource('members'), 'index');
         $acl->add(new Zend_Acl_Resource('member'), 'members');

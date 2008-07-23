@@ -31,6 +31,8 @@ class MemberController extends Vps_Controller_Action_Auto_Form
             ->setWidth(300);
         $fs->fields->add(new Vps_Form_Field_Checkbox('visible', 'Aktiv'));
         $fs->fields->add(new Vps_Form_Field_File('picture_id', 'Foto', 'Picture'));
+        $fs->fields->add(new Vps_Form_Field_GoogleMapsField('position', 'Position'));
+        
 
         $tab->fields->add($fs);
 

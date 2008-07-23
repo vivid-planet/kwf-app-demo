@@ -23,6 +23,8 @@ var Members = Ext.extend(Ext.Panel,
             width           : 300,
             resizable       : true,
             split           : true,
+            collapsible     : true,
+            title           : 'Kunden',
             bindings: [form, {
                 queryParam: 'member_id',
                 item: contacts
