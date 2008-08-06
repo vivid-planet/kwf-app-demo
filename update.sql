@@ -1,1 +1,0 @@
-ALTER TABLE `members` ADD `position` VARCHAR( 100 ) NOT NULL ;
