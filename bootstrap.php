@@ -18,7 +18,6 @@ $front = Vps_Controller_Front::getInstance();
 
 
 $acl = new Vps_Acl();
-$acl->remove('index');
 
 $acl->add(new Vps_Acl_Resource_MenuUrl('index',
         array('text'=>'Kunden', 'icon'=>'user.png'),
