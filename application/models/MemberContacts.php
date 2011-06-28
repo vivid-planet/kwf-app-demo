@@ -1,12 +1,11 @@
 <?php
-class MemberContacts extends Vps_Db_Table
+class MemberContacts extends Vps_Model_Db
 {
-    protected $_name = 'member_contacts';
+    protected $_table = 'member_contacts';
     protected $_referenceMap = array(
         'Member' => array(
-            'columns'           => array('member_id'),
-            'refTableClass'     => 'Members',
-            'refColumns'        => array('id')
+            'column'           => 'member_id',
+            'refModelClass'     => 'Members',
         )
     );
 }

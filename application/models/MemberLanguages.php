@@ -1,17 +1,15 @@
 <?php
-class MemberLanguages extends Vps_Db_Table
+class MemberLanguages extends Vps_Model_Db
 {
-    protected $_name = 'member_languages';
+    protected $_table = 'member_languages';
     protected $_referenceMap = array(
         'Member' => array(
-            'columns'           => array('member_id'),
-            'refTableClass'     => 'Members',
-            'refColumns'        => array('id')
+            'column'           => 'member_id',
+            'refModelClass'     => 'Members',
         ),
         'Language' => array(
-            'columns'           => array('language_id'),
-            'refTableClass'     => 'Vps_Dao_Pool',
-            'refColumns'        => array('id')
+            'column'           => 'language_id',
+            'refModelClass'     => 'Vps_Util_Model_Pool',
         )
     );
 }

@@ -2,7 +2,7 @@
 class MemberContactController extends Vps_Controller_Action_Auto_Form
 {
     protected $_permissions = array('save', 'add');
-    protected $_tableName = 'MemberContacts';
+    protected $_modelName = 'MemberContacts';
 
     protected function _initFields()
     {

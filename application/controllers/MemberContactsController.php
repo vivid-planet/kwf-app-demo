@@ -1,7 +1,7 @@
 <?php
 class MemberContactsController extends Vps_Controller_Action_Auto_Grid
 {
-    protected $_tableName = 'MemberContacts';
+    protected $_modelName = 'MemberContacts';
     protected $_defaultOrder = 'date';
     protected $_paging = 0;
     protected $_buttons = array('add', 'delete');

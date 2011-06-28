@@ -1,5 +1,5 @@
 <?php
-class Row_Member extends Vps_Db_Table_Row
+class Row_Member extends Vps_Model_Db_Row
 {
     protected $_cacheImages = array(
         'default' => array(120, 0)

@@ -3,7 +3,7 @@ class MemberController extends Vps_Controller_Action_Auto_Form
 {
     protected $_buttons = array('save');
     protected $_permissions = array('save', 'add');
-    protected $_tableName = 'Members';
+    protected $_modelName = 'Members';
 
     protected function _initFields()
     {
@@ -30,7 +30,7 @@ class MemberController extends Vps_Controller_Action_Auto_Form
         $fs->fields->add(new Vps_Form_Field_TextField('birth_place', 'Geburtsort'))
             ->setWidth(300);
         $fs->fields->add(new Vps_Form_Field_Checkbox('visible', 'Aktiv'));
-        $fs->fields->add(new Vps_Form_Field_File('picture_id', 'Foto', 'Picture'));
+        $fs->fields->add(new Vps_Form_Field_File('Picture', 'Foto'));
         $fs->fields->add(new Vps_Form_Field_GoogleMapsField('position', 'Position'));
         
 

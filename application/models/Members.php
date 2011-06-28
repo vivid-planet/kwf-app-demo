@@ -1,18 +1,19 @@
 <?php
-class Members extends Vps_Db_Table
+class Members extends Vps_Model_Db
 {
-    protected $_name = 'members';
+    protected $_table = 'members';
     protected $_rowClass = 'Row_Member';
     protected $_referenceMap = array(
         'Picture' => array(
-            'columns'           => array('picture_id'),
-            'refTableClass'     => 'Vps_Dao_File',
-            'refColumns'        => array('id')
+            'column'           => 'picture_id',
+            'refModelClass'     => 'Vps_Uploads_Model'
         ),
         'Branch' => array(
-            'columns'           => array('branch_id'),
-            'refTableClass'     => 'Misc_Branches',
-            'refColumns'        => array('id')
+            'columns'           => 'branch_id',
+            'refModelClass'     => 'Misc_Branches'
         )
+    );
+    protected $_dependentModels = array(
+        'MemberLanguages' => 'MemberLanguages'
     );
 }

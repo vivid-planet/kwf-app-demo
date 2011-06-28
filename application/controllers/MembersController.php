@@ -1,7 +1,7 @@
 <?php
 class MembersController extends Vps_Controller_Action_Auto_Grid
 {
-    protected $_tableName = 'Members';
+    protected $_modelName = 'Members';
     protected $_defaultOrder = 'lastname';
     protected $_paging = 20;
     protected $_buttons = array('add');

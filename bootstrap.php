@@ -20,15 +20,16 @@ $front = Vps_Controller_Front::getInstance();
 
 $acl = new Vps_Acl();
 
-$acl->add(new Vps_Acl_Resource_MenuUrl('index',
+$acl->remove('default_index');
+$acl->add(new Vps_Acl_Resource_MenuUrl('default_index',
         array('text'=>'Kunden', 'icon'=>'user.png'),
         '/'));
-    $acl->add(new Zend_Acl_Resource('members'), 'index');
-        $acl->add(new Zend_Acl_Resource('member'), 'members');
-        $acl->add(new Zend_Acl_Resource('membercontacts'), 'members');
-            $acl->add(new Zend_Acl_Resource('membercontact'), 'membercontacts');
+    $acl->add(new Zend_Acl_Resource('default_members'), 'default_index');
+        $acl->add(new Zend_Acl_Resource('default_member'), 'default_members');
+        $acl->add(new Zend_Acl_Resource('default_member-contacts'), 'default_members');
+            $acl->add(new Zend_Acl_Resource('default_member-contact'), 'default_member-contacts');
 
-$acl->allow('guest', 'index');
+$acl->allow('guest', 'default_index');
 $acl->allow('guest', 'vps_media_upload');
 
 Zend_Registry::set('acl', $acl);
