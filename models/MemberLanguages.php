@@ -1,5 +1,5 @@
 <?php
-class MemberLanguages extends Vps_Model_Db
+class MemberLanguages extends Kwf_Model_Db
 {
     protected $_table = 'member_languages';
     protected $_referenceMap = array(
@@ -9,7 +9,7 @@ class MemberLanguages extends Vps_Model_Db
         ),
         'Language' => array(
             'column'           => 'language_id',
-            'refModelClass'     => 'Vps_Util_Model_Pool',
+            'refModelClass'     => 'Kwf_Util_Model_Pool',
         )
     );
 }

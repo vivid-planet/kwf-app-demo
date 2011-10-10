@@ -1,5 +1,5 @@
 <?php
-class MemberContactsController extends Vps_Controller_Action_Auto_Grid
+class MemberContactsController extends Kwf_Controller_Action_Auto_Grid
 {
     protected $_modelName = 'MemberContacts';
     protected $_defaultOrder = 'date';
@@ -13,9 +13,9 @@ class MemberContactsController extends Vps_Controller_Action_Auto_Grid
 
     protected function _initColumns()
     {
-        $this->_columns->add(new Vps_Grid_Column_Date('date', 'Date'));
-        $this->_columns->add(new Vps_Grid_Column('subject', 'Betreff'));
-        $this->_columns->add(new Vps_Grid_Column('text', 'Text'))
+        $this->_columns->add(new Kwf_Grid_Column_Date('date', 'Date'));
+        $this->_columns->add(new Kwf_Grid_Column('subject', 'Betreff'));
+        $this->_columns->add(new Kwf_Grid_Column('text', 'Text'))
             ->setRenderer('nl2Br')
             ->setWidth(300);
     }

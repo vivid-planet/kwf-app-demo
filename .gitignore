@@ -1,2 +1,6 @@
 querylog
-vps-lib
+vps-libconfig.db.ini
+include_path
+update
+
+eventlog

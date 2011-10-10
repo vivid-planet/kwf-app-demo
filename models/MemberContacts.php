@@ -1,5 +1,5 @@
 <?php
-class MemberContacts extends Vps_Model_Db
+class MemberContacts extends Kwf_Model_Db
 {
     protected $_table = 'member_contacts';
     protected $_referenceMap = array(
