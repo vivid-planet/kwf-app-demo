@@ -7,10 +7,6 @@ class Members extends Kwf_Model_Db
         'Picture' => array(
             'column'           => 'picture_id',
             'refModelClass'     => 'Kwf_Uploads_Model'
-        ),
-        'Branch' => array(
-            'columns'           => 'branch_id',
-            'refModelClass'     => 'Misc_Branches'
         )
     );
     protected $_dependentModels = array(
