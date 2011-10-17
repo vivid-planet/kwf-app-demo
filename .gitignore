@@ -4,3 +4,6 @@ config.db.ini
 include_path
 update
 eventlog
+kwf-lib
+config.local.ini
+
