@@ -24,7 +24,7 @@ class MemberController extends Kwf_Controller_Action_Auto_Form
         $fs->fields->add(new Kwf_Form_Field_TextField('title', trl('Title')))
             ->setWidth(300);
         $fs->fields->add(new Kwf_Form_Field_Select('sex', trl('Sex')))
-            ->setValues(array('male' => 'Herr', 'female' => 'Frau'))
+            ->setValues(array('male' => trl('Male'), 'female' => trl('Female')))
             ->setAllowBlank(false);
         $fs->fields->add(new Kwf_Form_Field_DateField('birth_date', trl('Birthdate')));
         $fs->fields->add(new Kwf_Form_Field_TextField('birth_place', trl('Birthplace')))
@@ -47,9 +47,9 @@ class MemberController extends Kwf_Controller_Action_Auto_Form
 
         // **** Beruf
         $tab = $tabs->add();
-        $tab->setTitle('Beruf');
+        $tab->setTitle(trl('Job'));
 
-        $fs = new Kwf_Form_Container_FieldSet('Beruf');
+        $fs = new Kwf_Form_Container_FieldSet(trl('Job'));
         $fs->setLabelWidth(150);
         $fs->fields->add(new Kwf_Form_Field_PoolSelect('branch_id', trl('Branch Category')))
             ->setPool('Branches')
