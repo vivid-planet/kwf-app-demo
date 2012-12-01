@@ -20,10 +20,10 @@ class MemberContactsController extends Kwf_Controller_Action_Auto_Grid
             ->setWidth(300);
     }
 
-    protected function _getWhere()
+    protected function _getSelect()
     {
-        $ret = parent::_getWhere();
-        $ret['member_id = ?'] = $this->_getParam('member_id');
+        $ret = parent::_getSelect();
+        $ret->whereEquals('member_id', $this->_getParam('member_id'));
         return $ret;
     }
 }
