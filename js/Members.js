@@ -1,6 +1,6 @@
 var Members = Ext.extend(Ext.Panel,
 {
-    initComponent : function(test)
+    initComponent : function()
     {
         var form = new Kwf.Auto.FormPanel({
             controllerUrl   : '/member',
