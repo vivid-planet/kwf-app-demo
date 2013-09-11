@@ -6,7 +6,7 @@ class Acl extends Kwf_Acl
         parent::__construct();
         $this->remove('default_index');
         $this->addResource(new Kwf_Acl_Resource_MenuUrl('default_index',
-                array('text'=>trl('Customers'), 'icon'=>'user.png'),
+                array('text'=>trlStatic('Customers'), 'icon'=>'user.png'),
                 '/'));
             $this->addResource(new Zend_Acl_Resource('default_members'), 'default_index');
                 $this->addResource(new Zend_Acl_Resource('default_member'), 'default_members');
