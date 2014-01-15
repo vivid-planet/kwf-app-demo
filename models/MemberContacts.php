@@ -8,4 +8,8 @@ class MemberContacts extends Kwf_Model_Db
             'refModelClass'     => 'Members',
         )
     );
+
+    protected $_filters = array(
+        'id' => 'Kwf_Filter_Row_GenerateUuid'
+    );
 }

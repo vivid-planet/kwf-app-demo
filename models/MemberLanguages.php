@@ -12,4 +12,8 @@ class MemberLanguages extends Kwf_Model_Db
             'refModelClass'     => 'Kwf_Util_Model_Pool',
         )
     );
+
+    protected $_filters = array(
+        'id' => 'Kwf_Filter_Row_GenerateUuid'
+    );
 }

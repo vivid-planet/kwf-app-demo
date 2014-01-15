@@ -12,4 +12,8 @@ class Members extends Kwf_Model_Db
     protected $_dependentModels = array(
         'MemberLanguages' => 'MemberLanguages'
     );
+
+    protected $_filters = array(
+        'id' => 'Kwf_Filter_Row_GenerateUuid'
+    );
 }
