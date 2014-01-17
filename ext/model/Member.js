@@ -1,6 +1,9 @@
+// @require Ext.data.association.HasMany
+// @require Ext.data.association.BelongsTo
+
 Ext4.define('App.model.Member', {
     extend: 'Ext.data.Model',
-    requires: ['Ext.data.UuidGenerator'],
+    requires: ['Ext.data.UuidGenerator', 'App.model.MemberContact'],
     idProperty: 'id',
     idgen: 'uuid',
     fields: [
@@ -9,7 +12,16 @@ Ext4.define('App.model.Member', {
         {name: 'lastname', type: 'string'},
         {name: 'title', type: 'string'}
     ],
-
+    hasMany: [
+        {
+            name: 'contacts',
+            model: 'App.model.MemberContact',
+            primaryKey: 'id',
+            foreignKey: 'member_id',
+            autoLoad: false,
+            storeConfig: { remoteFilter: true }
+        }
+    ],
     proxy: {
         type: 'rest',
         url: '/api/members',

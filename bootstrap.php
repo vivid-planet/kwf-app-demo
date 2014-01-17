@@ -5,14 +5,5 @@ Kwf_Setup::setUp();
 Kwf_Setup::dispatchMedia();
 
 $front = Kwf_Controller_Front::getInstance();
-
-$restRoute = new Kwf_Rest_Route(
-    $front,
-    array(),
-    array('api')
-);
-if (php_sapi_name() != 'cli') $front->getRouter()->addRoute('rest', $restRoute);
-
-
 $response = $front->dispatch();
 $response->sendResponse();

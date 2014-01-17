@@ -4,15 +4,19 @@ Ext4.define('App.controller.Members', {
     requires: [
         'App.view.Members',
         'App.store.Members',
-        'App.model.Member'
+        'Kwf.Ext4.Controller.Binding.FormToGrid',
+        'Kwf.Ext4.Controller.Binding.GridToGrid',
+        'Kwf.Ext4.Controller.Grid',
+        'Kwf.Ext4.Controller.GridEditWindow',
+        'App.view.members.contacts.EditWindow'
     ],
 
     views: [
         'Members',
+        'members.contacts.EditWindow'
     ],
 
     models: [
-        'Member'
     ],
 
     stores: [
@@ -33,55 +37,31 @@ Ext4.define('App.controller.Members', {
 
         this.getMembersStore().load();
 
-        this.mainPanel = this.getView('Members').create({
-            membersStore: this.getMembersStore()
+        this.mainPanel = this.getView('Members').create();
+
+        this.mainPanel.down('grid#members').bindStore(this.getMembersStore());
+        new Kwf.Ext4.Controller.Grid({
+            grid: this.mainPanel.down('grid#members')
         });
 
-        var grid = this.mainPanel.down('grid');
-        var form = this.mainPanel.down('form');
-        form.disable();
-        grid.down('button#delete').disable();
-        form.down('button#save').disable();
+        new Kwf.Ext4.Controller.Binding.FormToGrid({
+            source: this.mainPanel.down('grid#members'),
+            form: this.mainPanel.down('form')
+        });
 
-        grid.on('selectionchange', function(model, rows) {
-            if (rows[0]) {
-                var row = rows[0];
-                form.getForm().loadRecord(row);
-                form.enable();
-                grid.down('button#delete').enable();
-                form.down('button#save').enable();
-            } else {
-                form.disable();
-                grid.down('button#delete').disable();
-                form.down('button#save').disable();
-            }
-        }, this);
-        grid.on('beforedeselect', function(sm, record) {
-            if (!form.getForm().isValid()) {
-                return false;
-            }
-        }, this);
+        new Kwf.Ext4.Controller.Grid({
+            grid: this.mainPanel.down('grid#contacts')
+        });
+        new Kwf.Ext4.Controller.Binding.GridToGrid({
+            source: this.mainPanel.down('grid#members'),
+            grid: this.mainPanel.down('grid#contacts'),
+            relation: 'contacts'
+        });
 
-        form.down('button#save').on('click', function() {
-            var row = form.getRecord();
-            form.updateRecord(row);
-            grid.getStore().sync();
-        }, this);
-        grid.down('button#delete').on('click', function() {
-            var sm = grid.getSelectionModel();
-            grid.getStore().remove(sm.getSelection());
-            grid.getStore().sync();
-        }, this);
-        grid.down('button#add').on('click', function() {
-            if (!form.getForm().isValid()) {
-                return false;
-            }
-            var s = grid.getStore();
-            var row = s.model.create();
-            s.add(row);
-            grid.getSelectionModel().select(row);
-
-            form.down('[name=firstname]').focus();
-        }, this);
+        var editWindow = this.getView('members.contacts.EditWindow').create();
+        new Kwf.Ext4.Controller.GridEditWindow({
+            grid: this.mainPanel.down('grid#contacts'),
+            editWindow: editWindow
+        });
     }
 });

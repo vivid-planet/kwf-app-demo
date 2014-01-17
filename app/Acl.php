@@ -20,6 +20,7 @@ class Acl extends Kwf_Acl
 
         $this->add(new Zend_Acl_Resource('api'));
             $this->add(new Zend_Acl_Resource('api_members'), 'api');
+            $this->add(new Zend_Acl_Resource('api_member-contacts'), 'api');
 
         $this->allow('guest', 'default_index');
         $this->allow('guest', 'kwf_media_upload');
