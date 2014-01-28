@@ -1,10 +1,10 @@
 Ext4.define('App.view.members.Form', {
     extend: 'Ext.form.Panel',
     uses: [ 'Ext.form.field.Text' ],
-    tbar: [{
-        text: trl('Save'),
-        itemId: 'save'
-    }],
+    requires: ['Kwf.Ext4.Controller.Action.Form.Save'],
+    tbar: [
+        new Kwf.Ext4.Controller.Action.Form.Save()
+    ],
     items: [{
         xtype: 'textfield',
         name: 'firstname',
