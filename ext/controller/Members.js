@@ -8,7 +8,12 @@ Ext4.define('App.controller.Members', {
         'Kwf.Ext4.Controller.Binding.GridToGrid',
         'Kwf.Ext4.Controller.Grid',
         'Kwf.Ext4.Controller.GridEditWindow',
-        'App.view.members.contacts.EditWindow'
+        'App.view.members.contacts.EditWindow',
+        'Kwf.Ext4.Controller.Binding.BindableToGrid',
+        'Kwf.Ext4.Controller.Bindable.Multiple',
+        'Kwf.Ext4.Controller.Bindable.Form',
+        'Kwf.Ext4.Controller.Bindable.Grid',
+        'Kwf.Ext4.Controller.Form'
     ],
 
     views: [
@@ -40,22 +45,53 @@ Ext4.define('App.controller.Members', {
         this.mainPanel = this.getView('Members').create();
 
         this.mainPanel.down('grid#members').bindStore(this.getMembersStore());
-        new Kwf.Ext4.Controller.Grid({
+        this.membersGridController = new Kwf.Ext4.Controller.Grid({
+            deleteButton: this.mainPanel.down('form #delete'),
             grid: this.mainPanel.down('grid#members')
         });
-
-        new Kwf.Ext4.Controller.Binding.FormToGrid({
-            source: this.mainPanel.down('grid#members'),
-            form: this.mainPanel.down('form')
+/*
+        new Kwf.Ext4.Controller.Binding.BindableToGrid({
+            gridController: this.contactsGridController,
+            saveButton: this.mainPanel.down('button#save'),
+            deleteButton: this.mainPanel.down('button#delete'),
+            bindable: new Kwf.Ext4.Controller.Bindable.Multiple({
+                items: [
+                    new Kwf.Ext4.Controller.Bindable.Form({
+                        formController: new Kwf.Ext4.Controller.Form({
+                            form: this.mainPanel.down('form')
+                        })
+                    }),
+                    new Kwf.Ext4.Controller.Bindable.Grid({
+                        gridController: new Kwf.Ext4.Controller.Grid({
+                            grid: this.mainPanel.down('grid#contacts')
+                        }),
+                        relation: 'contacts'
+                    })
+                ]
+            })
         });
+*/
 
-        new Kwf.Ext4.Controller.Grid({
+        this.contactsGridController = new Kwf.Ext4.Controller.Grid({
             grid: this.mainPanel.down('grid#contacts')
         });
-        new Kwf.Ext4.Controller.Binding.GridToGrid({
-            source: this.mainPanel.down('grid#members'),
-            grid: this.mainPanel.down('grid#contacts'),
-            relation: 'contacts'
+
+        new Kwf.Ext4.Controller.Binding.BindableToGrid({
+            gridController: this.membersGridController,
+            bindable: new Kwf.Ext4.Controller.Bindable.Form({
+                formController: new Kwf.Ext4.Controller.Form({
+                    form: this.mainPanel.down('form')
+                })
+            })
+        });
+        new Kwf.Ext4.Controller.Binding.BindableToGrid({
+            gridController: this.membersGridController,
+            bindable: new Kwf.Ext4.Controller.Bindable.Grid({
+                gridController: new Kwf.Ext4.Controller.Grid({
+                    grid: this.mainPanel.down('grid#contacts')
+                }),
+                relation: 'contacts'
+            })
         });
 
         var editWindow = this.getView('members.contacts.EditWindow').create();
