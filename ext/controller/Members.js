@@ -4,8 +4,6 @@ Ext4.define('App.controller.Members', {
     requires: [
         'App.view.Members',
         'App.store.Members',
-        'Kwf.Ext4.Controller.Binding.FormToGrid',
-        'Kwf.Ext4.Controller.Binding.GridToGrid',
         'Kwf.Ext4.Controller.Grid',
         'Kwf.Ext4.Controller.GridEditWindow',
         'App.view.members.contacts.EditWindow',

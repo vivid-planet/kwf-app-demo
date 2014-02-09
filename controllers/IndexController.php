@@ -1,8 +1,8 @@
 <?php
-class IndexController extends Kwf_Controller_Action
+class IndexController extends Zend_Controller_Action
 {
     public function indexAction()
     {
-        $this->view->ext('Members');
+        Kwf_Util_Redirect::redirect('/kwf/ext4/members');
     }
 }
