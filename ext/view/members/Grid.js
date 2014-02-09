@@ -23,10 +23,10 @@ Ext4.define('App.view.members.Grid', {
     columns: [{
         text: trl('Lastname'),
         dataIndex: 'lastname',
-        width: 60
+        width: 120
     },{
         text: trl('Firstname'),
         dataIndex: 'firstname',
-        width: 60
+        flex: true
     }]
 });
