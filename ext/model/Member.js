@@ -33,7 +33,8 @@ Ext4.define('App.model.Member', {
 
         writer: {
             type: 'json',
-            nameProperty: 'mapping'
+            nameProperty: 'mapping',
+            writeAllFields: false
         }
     }
 });

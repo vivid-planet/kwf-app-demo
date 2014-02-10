@@ -23,7 +23,8 @@ Ext4.define('App.model.MemberContact', {
 
         writer: {
             type: 'json',
-            nameProperty: 'mapping'
+            nameProperty: 'mapping',
+            writeAllFields: false
         }
     }
 });
