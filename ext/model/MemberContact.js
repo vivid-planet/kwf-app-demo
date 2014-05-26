@@ -10,7 +10,16 @@ Ext4.define('App.model.MemberContact', {
         {name: 'member_id', type: 'string'},
     ],
 
-    belongsTo: ['App.model.Member'],
+    belongsTo: [
+        {
+            name: 'member',
+            instanceName: 'member',
+            model: 'App.model.Member',
+            foreignKey: 'member_id',
+            getterName: 'getMember',
+            setterName: 'setMember'
+        }
+    ],
 
     proxy: {
         type: 'rest',
