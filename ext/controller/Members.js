@@ -75,14 +75,14 @@ Ext4.define('App.controller.Members', {
             autoSync: true
         });
 
-        var formController = new Kwf.Ext4.Controller.Bindable.Form({
+        var bindableFormController = new Kwf.Ext4.Controller.Bindable.Form({
             formController: new Kwf.Ext4.Controller.Form({
                 form: this.mainPanel.down('form')
             })
         });
         new Kwf.Ext4.Controller.Binding.BindableToGrid({
             gridController: this.membersGridController,
-            bindable: formController
+            bindable: bindableFormController
         });
         new Kwf.Ext4.Controller.Binding.BindableToGrid({
             gridController: this.membersGridController,
@@ -98,7 +98,11 @@ Ext4.define('App.controller.Members', {
         new Kwf.Ext4.Controller.Grid.EditWindow({
             gridController: this.contactsGridController,
             editWindowController: new Kwf.Ext4.Controller.Binding.EditWindow({
-                bindable: formController,
+                bindable: new Kwf.Ext4.Controller.Bindable.Form({
+                    formController: new Kwf.Ext4.Controller.Form({
+                        form: editWindow.down('form')
+                    })
+                }),
                 editWindow: editWindow,
                 autoSync: true
             })
