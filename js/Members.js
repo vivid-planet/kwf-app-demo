@@ -1,4 +1,4 @@
-var Members = Ext.extend(Ext.Panel,
+var Members = Ext2.extend(Ext2.Panel,
 {
     initComponent : function()
     {

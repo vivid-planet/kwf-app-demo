@@ -1,0 +1,5 @@
+{
+    "require": {
+        "koala-framework/koala-framework": "dev-composer"
+    }
+}
