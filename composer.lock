@@ -4,20 +4,51 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "41df0e4792d8d093874777e404fcb5a0",
+    "hash": "4363251ec45f286a9e56996495521424",
     "packages": [
+        {
+            "name": "koala-framework/extjs",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/koala-framework/extjs.git",
+                "reference": "8d92d85b860bcbe647d0d40eafba33b9afbf2b10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/koala-framework/extjs/zipball/8d92d85b860bcbe647d0d40eafba33b9afbf2b10",
+                "reference": "8d92d85b860bcbe647d0d40eafba33b9afbf2b10",
+                "shasum": ""
+            },
+            "require": {
+                "koala-framework/library-extjs": "4.2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Kwf_Ext_": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD"
+            ],
+            "description": "ExtJS Integration for Koala Framework",
+            "homepage": "http://www.koala-framework.org/",
+            "time": "2014-05-29 18:56:15"
+        },
         {
             "name": "koala-framework/koala-framework",
             "version": "dev-composer",
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/koala-framework.git",
-                "reference": "945efb3a45304d3444117a35f65f67b2a825c066"
+                "reference": "e06873d6fbfac5c3195c9eaeb8dfaa6c11d25309"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/koala-framework/zipball/945efb3a45304d3444117a35f65f67b2a825c066",
-                "reference": "945efb3a45304d3444117a35f65f67b2a825c066",
+                "url": "https://api.github.com/repos/koala-framework/koala-framework/zipball/e06873d6fbfac5c3195c9eaeb8dfaa6c11d25309",
+                "reference": "e06873d6fbfac5c3195c9eaeb8dfaa6c11d25309",
                 "shasum": ""
             },
             "require": {
@@ -37,7 +68,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-05-28 18:26:16"
+            "time": "2014-05-29 18:31:55"
         },
         {
             "name": "koala-framework/library-compass-mixins",
@@ -61,6 +92,29 @@
             "description": "A collection of compass' stylesheet for libsass",
             "homepage": "https://github.com/Igosuki/compass-mixins",
             "time": "2014-05-23 13:37:53"
+        },
+        {
+            "name": "koala-framework/library-extjs",
+            "version": "v4.2.1.883",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/koala-framework/library-extjs.git",
+                "reference": "2ef82d5c9a3460cdbcdcf640103545a40e489066"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/koala-framework/library-extjs/zipball/2ef82d5c9a3460cdbcdcf640103545a40e489066",
+                "reference": "2ef82d5c9a3460cdbcdcf640103545a40e489066",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL"
+            ],
+            "description": "ExtJS JavaScript Library",
+            "homepage": "http://www.sencha.com/products/extjs/",
+            "time": "2014-05-28 14:58:49"
         },
         {
             "name": "koala-framework/library-extjs2",
@@ -292,7 +346,8 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "koala-framework/koala-framework": 20
+        "koala-framework/koala-framework": 20,
+        "koala-framework/extjs": 20
     },
     "platform": [
 

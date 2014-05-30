@@ -1,5 +1,6 @@
 {
     "require": {
-        "koala-framework/koala-framework": "dev-composer"
+        "koala-framework/koala-framework": "dev-composer",
+        "koala-framework/extjs": "dev-master"
     }
 }
