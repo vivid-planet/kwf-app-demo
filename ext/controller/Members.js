@@ -5,7 +5,7 @@ Ext4.define('App.controller.Members', {
         'App.view.Members',
         'App.store.Members',
         'Kwf.Ext4.Controller.Grid',
-        'Kwf.Ext4.Controller.GridEditWindow',
+        'Kwf.Ext4.Controller.Grid.EditWindow',
         'App.view.members.contacts.EditWindow',
         'Kwf.Ext4.Controller.Binding.BindableToGrid',
         'Kwf.Ext4.Controller.Bindable.Multiple',
@@ -71,16 +71,18 @@ Ext4.define('App.controller.Members', {
 */
 
         this.contactsGridController = new Kwf.Ext4.Controller.Grid({
-            grid: this.mainPanel.down('grid#contacts')
+            grid: this.mainPanel.down('grid#contacts'),
+            autoSync: true
         });
 
+        var bindableFormController = new Kwf.Ext4.Controller.Bindable.Form({
+            formController: new Kwf.Ext4.Controller.Form({
+                form: this.mainPanel.down('form')
+            })
+        });
         new Kwf.Ext4.Controller.Binding.BindableToGrid({
             gridController: this.membersGridController,
-            bindable: new Kwf.Ext4.Controller.Bindable.Form({
-                formController: new Kwf.Ext4.Controller.Form({
-                    form: this.mainPanel.down('form')
-                })
-            })
+            bindable: bindableFormController
         });
         new Kwf.Ext4.Controller.Binding.BindableToGrid({
             gridController: this.membersGridController,
@@ -93,9 +95,17 @@ Ext4.define('App.controller.Members', {
         });
 
         var editWindow = this.getView('members.contacts.EditWindow').create();
-        new Kwf.Ext4.Controller.GridEditWindow({
-            grid: this.mainPanel.down('grid#contacts'),
-            editWindow: editWindow
+        new Kwf.Ext4.Controller.Grid.EditWindow({
+            gridController: this.contactsGridController,
+            editWindowController: new Kwf.Ext4.Controller.Binding.EditWindow({
+                bindable: new Kwf.Ext4.Controller.Bindable.Form({
+                    formController: new Kwf.Ext4.Controller.Form({
+                        form: editWindow.down('form')
+                    })
+                }),
+                editWindow: editWindow,
+                autoSync: true
+            })
         });
     }
 });

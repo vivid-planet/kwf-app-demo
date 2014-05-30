@@ -15,6 +15,9 @@ Ext4.define('App.view.members.Grid', {
             name: 'query'
         }
     ],
+    viewConfig: {
+        preserveScrollOnRefresh: true
+    },
     dockedItems: [{
         xtype: 'pagingtoolbar',
         dock: 'bottom',
@@ -28,5 +31,9 @@ Ext4.define('App.view.members.Grid', {
         text: trl('Firstname'),
         dataIndex: 'firstname',
         flex: true
+    },{
+        text: trl('Contacts'),
+        dataIndex: 'count_contacts',
+        width: 50
     }]
 });

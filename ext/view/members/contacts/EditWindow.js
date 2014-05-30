@@ -7,6 +7,7 @@ Ext4.define('App.view.members.contacts.EditWindow', {
         this.form = Ext4.create('App.view.members.contacts.Form', {
             stateId: this.stateId+'Form'
         });
+        this.items = [this.form];
         this.callParent(arguments);
     }
 });

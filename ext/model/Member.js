@@ -10,7 +10,8 @@ Ext4.define('App.model.Member', {
         {name: 'id', type: 'string'},
         {name: 'firstname', type: 'string'},
         {name: 'lastname', type: 'string'},
-        {name: 'title', type: 'string'}
+        {name: 'title', type: 'string'},
+        {name: 'count_contacts', type: 'int', persist: false}
     ],
     hasMany: [
         {
@@ -33,7 +34,8 @@ Ext4.define('App.model.Member', {
 
         writer: {
             type: 'json',
-            nameProperty: 'mapping'
+            nameProperty: 'mapping',
+            writeAllFields: false
         }
     }
 });
