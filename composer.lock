@@ -12,16 +12,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/koala-framework.git",
-                "reference": "945efb3a45304d3444117a35f65f67b2a825c066"
+                "reference": "61c4692448dc59dc542a2bac9bd6ee7b14fa62ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/koala-framework/zipball/945efb3a45304d3444117a35f65f67b2a825c066",
-                "reference": "945efb3a45304d3444117a35f65f67b2a825c066",
+                "url": "https://api.github.com/repos/koala-framework/koala-framework/zipball/61c4692448dc59dc542a2bac9bd6ee7b14fa62ab",
+                "reference": "61c4692448dc59dc542a2bac9bd6ee7b14fa62ab",
                 "shasum": ""
             },
             "require": {
                 "koala-framework/library-extjs2": "2.3.0",
+                "koala-framework/library-htmlawed": "1.1.14",
                 "koala-framework/library-jquery": "1.11.1",
                 "koala-framework/library-silkicons": "1.3",
                 "koala-framework/library-susy": "1.0.9",
@@ -29,15 +30,23 @@
                 "koala-framework/library-tinymce": "3.5.8",
                 "koala-framework/library-zendframework1": "1.12.6"
             },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "phpunit/phpunit-selenium": "*"
+            },
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "Kwf_": "./",
-                    "Kwc_": "./"
+                    "Kwf_": "",
+                    "Kwc_": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2014-05-28 18:26:16"
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "homepage": "http://www.koala-framework.org/",
+            "time": "2014-06-02 19:36:29"
         },
         {
             "name": "koala-framework/library-compass-mixins",
@@ -84,6 +93,29 @@
             "description": "ExtJS JavaScript Library",
             "homepage": "http://www.sencha.com/products/extjs/",
             "time": "2014-05-28 18:18:19"
+        },
+        {
+            "name": "koala-framework/library-htmlawed",
+            "version": "v1.1.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/koala-framework/library-htmlawed.git",
+                "reference": "bc23ceaea4bc740a5a9e47c982cb054546baa2c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/koala-framework/library-htmlawed/zipball/bc23ceaea4bc740a5a9e47c982cb054546baa2c3",
+                "reference": "bc23ceaea4bc740a5a9e47c982cb054546baa2c3",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "description": "Htmlawed library",
+            "homepage": "http://www.bioinformatics.org/phplabware/internal_utilities/htmLawed/",
+            "time": "2014-06-02 06:11:36"
         },
         {
             "name": "koala-framework/library-jquery",
