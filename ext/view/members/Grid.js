@@ -1,11 +1,14 @@
 Ext4.define('App.view.members.Grid', {
     extend: 'Ext.grid.Panel',
     requires: [
-        'Kwf.Ext4.Controller.Action.Add', 'Ext.form.field.Text',
-        'Ext.toolbar.TextItem', 'Ext.toolbar.Separator', 'Ext.toolbar.Paging'
+        'Kwf.Ext4.Controller.Action.Add', 'Kwf.Ext4.Controller.Action.ExportCsv', 'Ext.form.field.Text',
+        'Ext.toolbar.TextItem', 'Ext.toolbar.Separator', 'Ext.toolbar.Paging',
+        'App.view.members.GridController'
     ],
+    controller: 'App.view.members.GridController',
     tbar: [
         new Kwf.Ext4.Controller.Action.Add(),
+        new Kwf.Ext4.Controller.Action.ExportCsv(),
         { xtype: 'tbseparator' },
         trl('Filter:'),
         {

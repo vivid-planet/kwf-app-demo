@@ -5,6 +5,8 @@ Ext4.define('App.view.Members', {
         'App.view.members.Form',
         'App.view.members.contacts.Grid'
     ],
+    requires: [ 'App.view.MembersController' ],
+    controller: 'App.view.MembersController',
     layout: 'border',
     stateid: 'Members',
     stateful: true,
