@@ -11,7 +11,8 @@ Ext4.define('App.controller.Members', {
         'Kwf.Ext4.Controller.Bindable.Multiple',
         'Kwf.Ext4.Controller.Bindable.Form',
         'Kwf.Ext4.Controller.Bindable.Grid',
-        'Kwf.Ext4.Controller.Form'
+        'Kwf.Ext4.Controller.Form',
+        'Kwf.Ext4.Controller.Binding.EditWindow'
     ],
 
     views: [
