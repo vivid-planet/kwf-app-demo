@@ -1,0 +1,6 @@
+{
+    "require": {
+        "koala-framework/koala-framework": "dev-master",
+        "koala-framework/kwf-extjs": "dev-master"
+    }
+}

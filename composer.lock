@@ -1,0 +1,450 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "d48477e47ae3592d59ddc2b04893281f",
+    "packages": [
+        {
+            "name": "koala-framework/koala-framework",
+            "version": "dev-composer",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/koala-framework/koala-framework.git",
+                "reference": "016dc1204795465187acf1e93b33aee47be61775"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/koala-framework/koala-framework/zipball/016dc1204795465187acf1e93b33aee47be61775",
+                "reference": "016dc1204795465187acf1e93b33aee47be61775",
+                "shasum": ""
+            },
+            "require": {
+                "koala-framework/library-css3pie": "1.0.0",
+                "koala-framework/library-extjs2": "2.3.0",
+                "koala-framework/library-htmlawed": "1.1.14",
+                "koala-framework/library-jquery": "1.11.1",
+                "koala-framework/library-modernizr": "1.8.2.*",
+                "koala-framework/library-silkicons": "1.3",
+                "koala-framework/library-susy": "1.0.9",
+                "koala-framework/library-swfupload": "2.2.0.1",
+                "koala-framework/library-tinymce": "3.5.8",
+                "koala-framework/library-zendframework1": "1.12.6"
+            },
+            "require-dev": {
+                "amazonwebservices/aws-sdk-for-php": "1.5.14",
+                "phpunit/phpunit": "3.7.*",
+                "phpunit/phpunit-selenium": "*"
+            },
+            "suggest": {
+                "amazonwebservices/aws-sdk-for-php": "Integration with Amazon Web Services",
+                "phpoffice/phpexcel": "Allows exporting as XLS in AutoGrid",
+                "tecnick.com/tcpdf": "Allows generating pdfs from components"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Kwf_": "",
+                    "Kwc_": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "homepage": "http://www.koala-framework.org/",
+            "time": "2014-06-14 08:57:20"
+        },
+        {
+            "name": "koala-framework/kwf-extjs",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/koala-framework/kwf-extjs.git",
+                "reference": "14068740d3c561a29a7467005811343a051d2374"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/koala-framework/kwf-extjs/zipball/14068740d3c561a29a7467005811343a051d2374",
+                "reference": "14068740d3c561a29a7467005811343a051d2374",
+                "shasum": ""
+            },
+            "require": {
+                "koala-framework/koala-framework": "dev-composer",
+                "koala-framework/library-extjs": "4.2.*"
+            },
+            "require-dev": {
+                "koala-framework/library-qunit": "1.*",
+                "koala-framework/library-qunit-phantomjs-runner": "*",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Kwf_Ext_": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "description": "ExtJS Integration for Koala Framework",
+            "homepage": "http://www.koala-framework.org/",
+            "time": "2014-06-14 08:39:24"
+        },
+        {
+            "name": "koala-framework/library-compass-mixins",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/koala-framework/library-compass-mixins.git",
+                "reference": "7f8c2c7688d213dfed9ca7d3788e42ad965b6508"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/koala-framework/library-compass-mixins/zipball/7f8c2c7688d213dfed9ca7d3788e42ad965b6508",
+                "reference": "7f8c2c7688d213dfed9ca7d3788e42ad965b6508",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A collection of compass' stylesheet for libsass",
+            "homepage": "https://github.com/Igosuki/compass-mixins",
+            "time": "2014-05-23 13:37:53"
+        },
+        {
+            "name": "koala-framework/library-css3pie",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/koala-framework/library-css3pie.git",
+                "reference": "b2a7b69fa381065f4d1b90d03620c05bc5b4670f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/koala-framework/library-css3pie/zipball/b2a7b69fa381065f4d1b90d03620c05bc5b4670f",
+                "reference": "b2a7b69fa381065f4d1b90d03620c05bc5b4670f",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "CCSS3 PIE JavaScript Library",
+            "homepage": "http://css3pie.com/",
+            "time": "2014-06-03 18:55:48"
+        },
+        {
+            "name": "koala-framework/library-extjs",
+            "version": "v4.2.1.883",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/koala-framework/library-extjs.git",
+                "reference": "2ef82d5c9a3460cdbcdcf640103545a40e489066"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/koala-framework/library-extjs/zipball/2ef82d5c9a3460cdbcdcf640103545a40e489066",
+                "reference": "2ef82d5c9a3460cdbcdcf640103545a40e489066",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL"
+            ],
+            "description": "ExtJS JavaScript Library",
+            "homepage": "http://www.sencha.com/products/extjs/",
+            "time": "2014-05-28 14:58:49"
+        },
+        {
+            "name": "koala-framework/library-extjs2",
+            "version": "v2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/koala-framework/library-extjs2.git",
+                "reference": "582ba7e2279cd9aa32b90877049741dd3c1deef0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/koala-framework/library-extjs2/zipball/582ba7e2279cd9aa32b90877049741dd3c1deef0",
+                "reference": "582ba7e2279cd9aa32b90877049741dd3c1deef0",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL"
+            ],
+            "description": "ExtJS JavaScript Library",
+            "homepage": "http://www.sencha.com/products/extjs/",
+            "time": "2014-05-28 18:18:19"
+        },
+        {
+            "name": "koala-framework/library-htmlawed",
+            "version": "v1.1.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/koala-framework/library-htmlawed.git",
+                "reference": "bc23ceaea4bc740a5a9e47c982cb054546baa2c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/koala-framework/library-htmlawed/zipball/bc23ceaea4bc740a5a9e47c982cb054546baa2c3",
+                "reference": "bc23ceaea4bc740a5a9e47c982cb054546baa2c3",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "description": "Htmlawed library",
+            "homepage": "http://www.bioinformatics.org/phplabware/internal_utilities/htmLawed/",
+            "time": "2014-06-02 06:11:36"
+        },
+        {
+            "name": "koala-framework/library-jquery",
+            "version": "v1.11.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/koala-framework/library-jquery.git",
+                "reference": "13fcfe269d677d008a88f8a037bb65d40a7bdbf7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/koala-framework/library-jquery/zipball/13fcfe269d677d008a88f8a037bb65d40a7bdbf7",
+                "reference": "13fcfe269d677d008a88f8a037bb65d40a7bdbf7",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "jQuery JavaScript Library",
+            "homepage": "http://jquery.com",
+            "time": "2014-05-23 13:39:40"
+        },
+        {
+            "name": "koala-framework/library-modernizr",
+            "version": "v1.8.2-p0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/koala-framework/library-modernizr.git",
+                "reference": "d26cccbb49e6c002d2b0f0e877fe2b1ea9257d63"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/koala-framework/library-modernizr/zipball/d26cccbb49e6c002d2b0f0e877fe2b1ea9257d63",
+                "reference": "d26cccbb49e6c002d2b0f0e877fe2b1ea9257d63",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Modernizr JavaScript Library",
+            "homepage": "http://modernizr.com/",
+            "time": "2014-06-03 07:42:55"
+        },
+        {
+            "name": "koala-framework/library-silkicons",
+            "version": "v1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/koala-framework/library-silkicons.git",
+                "reference": "f7fee072786fc330bdbaf69d2fbf036f39eb53fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/koala-framework/library-silkicons/zipball/f7fee072786fc330bdbaf69d2fbf036f39eb53fa",
+                "reference": "f7fee072786fc330bdbaf69d2fbf036f39eb53fa",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Creative Commons Attribution 2.5 License"
+            ],
+            "authors": [
+                {
+                    "name": "Mark James",
+                    "homepage": "http://www.famfamfam.com/"
+                }
+            ],
+            "description": "This is the Famfamfam silk icon set, wrapped into an easy to use PHP composer package.",
+            "homepage": "http://www.famfamfam.com/",
+            "keywords": [
+                "famfamfam",
+                "icons",
+                "silk"
+            ],
+            "time": "2014-05-23 13:40:04"
+        },
+        {
+            "name": "koala-framework/library-susy",
+            "version": "v1.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/koala-framework/library-susy.git",
+                "reference": "d6f524118e07dd7d7cfa96967fc4be221c820e4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/koala-framework/library-susy/zipball/d6f524118e07dd7d7cfa96967fc4be221c820e4b",
+                "reference": "d6f524118e07dd7d7cfa96967fc4be221c820e4b",
+                "shasum": ""
+            },
+            "require": {
+                "koala-framework/library-compass-mixins": "1.0.0"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD"
+            ],
+            "description": "Responsive layout toolkit for Sass",
+            "homepage": "http://susy.oddbird.net/",
+            "time": "2014-05-23 13:40:29"
+        },
+        {
+            "name": "koala-framework/library-swfobject",
+            "version": "v2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/koala-framework/library-swfobject.git",
+                "reference": "c926af6c1b7448aa48724891c57ef62206a67e45"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/koala-framework/library-swfobject/zipball/c926af6c1b7448aa48724891c57ef62206a67e45",
+                "reference": "c926af6c1b7448aa48724891c57ef62206a67e45",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "SWFObject JavaScript Library",
+            "homepage": "https://github.com/swfobject/swfobject",
+            "time": "2014-05-23 13:40:50"
+        },
+        {
+            "name": "koala-framework/library-swfupload",
+            "version": "v2.2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/koala-framework/library-swfupload.git",
+                "reference": "2df9f377d524991c188e90c75a380171ae5fd3c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/koala-framework/library-swfupload/zipball/2df9f377d524991c188e90c75a380171ae5fd3c6",
+                "reference": "2df9f377d524991c188e90c75a380171ae5fd3c6",
+                "shasum": ""
+            },
+            "require": {
+                "koala-framework/library-swfobject": "2.2"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "ExtJS JavaScript Library",
+            "homepage": "http://code.google.com/p/swfupload/",
+            "time": "2014-05-23 13:42:42"
+        },
+        {
+            "name": "koala-framework/library-tinymce",
+            "version": "v3.5.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/koala-framework/library-tinymce.git",
+                "reference": "e90852f9e3bc40154278ff7082fcd8f5b4efce32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/koala-framework/library-tinymce/zipball/e90852f9e3bc40154278ff7082fcd8f5b4efce32",
+                "reference": "e90852f9e3bc40154278ff7082fcd8f5b4efce32",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "description": "TinyMCE JavaScript Library",
+            "homepage": "http://www.tinymce.com/",
+            "time": "2014-05-23 13:43:06"
+        },
+        {
+            "name": "koala-framework/library-zendframework1",
+            "version": "v1.12.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/koala-framework/library-zendframework1.git",
+                "reference": "ed59990bdf36d57135de1aae120ad14ae7d89873"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/koala-framework/library-zendframework1/zipball/ed59990bdf36d57135de1aae120ad14ae7d89873",
+                "reference": "ed59990bdf36d57135de1aae120ad14ae7d89873",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.11"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.12.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Zend_": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "library/"
+            ],
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Zend Framework 1",
+            "homepage": "http://framework.zend.com/",
+            "keywords": [
+                "ZF1",
+                "framework"
+            ],
+            "time": "2014-05-28 14:13:03"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "koala-framework/koala-framework": 20,
+        "koala-framework/kwf-extjs": 20
+    },
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}

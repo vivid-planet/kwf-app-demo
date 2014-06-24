@@ -7,4 +7,5 @@ eventlog
 kwf-lib
 config.local.ini
 library
-
+build
+vendor
