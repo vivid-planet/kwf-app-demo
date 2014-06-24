@@ -19,7 +19,8 @@ Ext4.define('App.view.MembersController', {
                     this.getForm(),
                     new Kwf.Ext4.Controller.Bindable.Grid({
                         grid: this.getContactsGrid(),
-                        relation: 'contacts'
+                        relation: 'contacts',
+                        reloadRowOnSave: true
                     })
                 ]
             })
