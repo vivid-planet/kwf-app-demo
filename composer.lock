@@ -4,25 +4,52 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5d18ccf8358faf76f28de8b8a5f556e2",
+    "hash": "6c83c3a6f573cb86c91c064428cc00a4",
     "packages": [
+        {
+            "name": "koala-framework/extjs-addons",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/koala-framework/extjs-addons.git",
+                "reference": "bf106f1faabeb1b6e39e3bd960a89dcb276e05a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/koala-framework/extjs-addons/zipball/bf106f1faabeb1b6e39e3bd960a89dcb276e05a8",
+                "reference": "bf106f1faabeb1b6e39e3bd960a89dcb276e05a8",
+                "shasum": ""
+            },
+            "require": {
+                "koala-framework/library-deftjs": "0.9.*",
+                "koala-framework/library-extjs": "4.2.*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "description": "Koala Framework ExtJS Addons",
+            "homepage": "http://www.koala-framework.org/",
+            "time": "2014-06-25 14:19:20"
+        },
         {
             "name": "koala-framework/koala-framework",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/koala-framework.git",
-                "reference": "b8ab44ec7683c1120bf12296058a8f091ac17f7d"
+                "reference": "55c2ae96842dececbe170e7f17fa727be30e9193"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/koala-framework/zipball/b8ab44ec7683c1120bf12296058a8f091ac17f7d",
-                "reference": "b8ab44ec7683c1120bf12296058a8f091ac17f7d",
+                "url": "https://api.github.com/repos/koala-framework/koala-framework/zipball/55c2ae96842dececbe170e7f17fa727be30e9193",
+                "reference": "55c2ae96842dececbe170e7f17fa727be30e9193",
                 "shasum": ""
             },
             "require": {
                 "koala-framework/library-css3pie": "1.0.0",
-                "koala-framework/library-extjs2": "2.3.0",
+                "koala-framework/library-extjs2": "2.3.0.*",
                 "koala-framework/library-htmlawed": "1.1.14",
                 "koala-framework/library-jquery": "1.11.1",
                 "koala-framework/library-modernizr": "1.8.2.*",
@@ -56,7 +83,7 @@
             ],
             "description": "Framework and CMS based on Zend Framework and ExtJS",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2014-06-24 13:39:35"
+            "time": "2014-06-25 14:21:18"
         },
         {
             "name": "koala-framework/kwf-deftjs",
@@ -96,12 +123,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/kwf-extjs.git",
-                "reference": "e1de9507bafaa1c9e7f4ad71c9250105809af854"
+                "reference": "2e33f6370741b9636cb513be50995694c3382967"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/kwf-extjs/zipball/e1de9507bafaa1c9e7f4ad71c9250105809af854",
-                "reference": "e1de9507bafaa1c9e7f4ad71c9250105809af854",
+                "url": "https://api.github.com/repos/koala-framework/kwf-extjs/zipball/2e33f6370741b9636cb513be50995694c3382967",
+                "reference": "2e33f6370741b9636cb513be50995694c3382967",
                 "shasum": ""
             },
             "require": {
@@ -125,7 +152,7 @@
             ],
             "description": "ExtJS Integration for Koala Framework",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2014-06-18 15:14:43"
+            "time": "2014-06-25 15:00:14"
         },
         {
             "name": "koala-framework/library-compass-mixins",
@@ -224,16 +251,16 @@
         },
         {
             "name": "koala-framework/library-extjs2",
-            "version": "v2.3.0",
+            "version": "v2.3.0-p0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/library-extjs2.git",
-                "reference": "582ba7e2279cd9aa32b90877049741dd3c1deef0"
+                "reference": "e1aa3a546a0bbaffdfb454d36c37c628b3ce5a6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/library-extjs2/zipball/582ba7e2279cd9aa32b90877049741dd3c1deef0",
-                "reference": "582ba7e2279cd9aa32b90877049741dd3c1deef0",
+                "url": "https://api.github.com/repos/koala-framework/library-extjs2/zipball/e1aa3a546a0bbaffdfb454d36c37c628b3ce5a6b",
+                "reference": "e1aa3a546a0bbaffdfb454d36c37c628b3ce5a6b",
                 "shasum": ""
             },
             "type": "library",
@@ -243,7 +270,7 @@
             ],
             "description": "ExtJS JavaScript Library",
             "homepage": "http://www.sencha.com/products/extjs/",
-            "time": "2014-05-28 18:18:19"
+            "time": "2014-06-25 11:14:26"
         },
         {
             "name": "koala-framework/library-htmlawed",
@@ -513,22 +540,15 @@
             "time": "2014-05-28 14:13:03"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
         "koala-framework/koala-framework": 20,
         "koala-framework/kwf-extjs": 20,
-        "koala-framework/kwf-deftjs": 20
+        "koala-framework/kwf-deftjs": 20,
+        "koala-framework/extjs-addons": 20
     },
-    "platform": [
-
-    ],
-    "platform-dev": [
-
-    ]
+    "platform": [],
+    "platform-dev": []
 }
