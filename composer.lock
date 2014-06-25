@@ -4,15 +4,21 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "599b240940822e91296b886528d46585",
+    "hash": "5d18ccf8358faf76f28de8b8a5f556e2",
     "packages": [
         {
             "name": "koala-framework/koala-framework",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "ssh://git.vivid-planet.com/git/kwf",
-                "reference": "e41c9ee14e3306a1496b006479b14fe087376e43"
+                "url": "https://github.com/koala-framework/koala-framework.git",
+                "reference": "b8ab44ec7683c1120bf12296058a8f091ac17f7d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/koala-framework/koala-framework/zipball/b8ab44ec7683c1120bf12296058a8f091ac17f7d",
+                "reference": "b8ab44ec7683c1120bf12296058a8f091ac17f7d",
+                "shasum": ""
             },
             "require": {
                 "koala-framework/library-css3pie": "1.0.0",
@@ -44,12 +50,13 @@
                     "Kwc_": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-2-Clause"
             ],
             "description": "Framework and CMS based on Zend Framework and ExtJS",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2014-06-23 15:20:46"
+            "time": "2014-06-24 13:39:35"
         },
         {
             "name": "koala-framework/kwf-deftjs",
@@ -57,12 +64,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/kwf-deftjs.git",
-                "reference": "09433abc56622a0fa0d0e62f9b9ae9522fac6f99"
+                "reference": "0926c79d0408ab1cdc06418a1a5fa0c4c0a4ed62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/kwf-deftjs/zipball/09433abc56622a0fa0d0e62f9b9ae9522fac6f99",
-                "reference": "09433abc56622a0fa0d0e62f9b9ae9522fac6f99",
+                "url": "https://api.github.com/repos/koala-framework/kwf-deftjs/zipball/0926c79d0408ab1cdc06418a1a5fa0c4c0a4ed62",
+                "reference": "0926c79d0408ab1cdc06418a1a5fa0c4c0a4ed62",
                 "shasum": ""
             },
             "require": {
@@ -81,7 +88,7 @@
             ],
             "description": "DeftJS Integration for Koala Framework",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2014-06-23 13:14:32"
+            "time": "2014-06-24 11:26:10"
         },
         {
             "name": "koala-framework/kwf-extjs",
@@ -506,14 +513,22 @@
             "time": "2014-05-28 14:13:03"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
         "koala-framework/koala-framework": 20,
         "koala-framework/kwf-extjs": 20,
         "koala-framework/kwf-deftjs": 20
     },
-    "platform": [],
-    "platform-dev": []
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
 }
