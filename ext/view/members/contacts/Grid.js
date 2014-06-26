@@ -1,10 +1,10 @@
 Ext4.define('App.view.members.contacts.Grid', {
     extend: 'Ext.grid.Panel',
-    requires: ['Kwf.Ext4.Controller.Action.Add', 'Kwf.Ext4.Controller.Action.Delete', 'App.view.members.contacts.GridController'],
+    requires: ['Densa.action.Add', 'Densa.action.Delete', 'App.view.members.contacts.GridController'],
     controller: 'App.view.members.contacts.GridController',
     tbar: [
-        new Kwf.Ext4.Controller.Action.Add(),
-        new Kwf.Ext4.Controller.Action.Delete()
+        new Densa.action.Add(),
+        new Densa.action.Delete()
     ],
     columns: [{
         text: trl('Subject'),

@@ -1,5 +1,5 @@
 Ext4.define('App.view.members.FormController', {
-    extend: 'Kwf.Ext4.ViewController.Form',
+    extend: 'Densa.form.PanelController',
     init: function() {
         this.callParent(arguments);
     }

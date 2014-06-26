@@ -1,5 +1,5 @@
 Ext4.define('App.view.members.GridController', {
-    extend: 'Kwf.Ext4.ViewController.Grid',
+    extend: 'Densa.grid.PanelController',
     autoLoad: true,
 
     init: function() {

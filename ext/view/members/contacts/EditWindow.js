@@ -1,5 +1,5 @@
 Ext4.define('App.view.members.contacts.EditWindow', {
-    extend: 'Kwf.Ext4.View.EditWindow',
+    extend: 'Densa.editWindow.Window',
     requires: [
         'App.view.members.contacts.Form',
         'App.view.members.contacts.EditWindowController'

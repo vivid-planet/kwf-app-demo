@@ -1,13 +1,13 @@
 Ext4.define('App.view.members.contacts.GridController', {
-    extend: 'Kwf.Ext4.ViewController.Grid',
+    extend: 'Densa.grid.PanelController',
     requires: [
         'App.view.members.contacts.EditWindow',
-        'Kwf.Ext4.Controller.Grid.EditWindow'
+        'Densa.grid.controller.EditWindow'
     ],
     init: function() {
         this.callParent(arguments);
 
-        new Kwf.Ext4.Controller.Grid.EditWindow({
+        new Densa.grid.controller.EditWindow({
             grid: this.view,
             editWindow: new App.view.members.contacts.EditWindow()
         });

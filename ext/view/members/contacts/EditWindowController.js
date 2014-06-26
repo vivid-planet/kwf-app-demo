@@ -1,5 +1,5 @@
 Ext4.define('App.view.members.contacts.EditWindowController', {
-    extend: 'Kwf.Ext4.ViewController.EditWindow',
+    extend: 'Densa.editWindow.WindowController',
 
     autoSync: true,
 

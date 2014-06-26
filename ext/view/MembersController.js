@@ -1,9 +1,9 @@
 Ext4.define('App.view.MembersController', {
     extend: 'Deft.mvc.ViewController',
     requires: [
-        'Kwf.Ext4.Controller.Binding.BindableToGrid',
-        'Kwf.Ext4.Controller.Bindable.Multiple',
-        'Kwf.Ext4.Controller.Bindable.Grid'
+        'Densa.grid.controller.Bind',
+        'Densa.mvc.bindable.Multiple',
+        'Densa.mvc.bindable.Grid'
     ],
     control: {
         form: 'form',
@@ -12,12 +12,12 @@ Ext4.define('App.view.MembersController', {
     },
     init: function() {
         this.callParent(arguments);
-        new Kwf.Ext4.Controller.Binding.BindableToGrid({
+        new Densa.grid.controller.Bind({
             grid: this.getGrid(),
-            bindable: new Kwf.Ext4.Controller.Bindable.Multiple({
+            bindable: new Densa.mvc.bindable.Multiple({
                 items: [
                     this.getForm(),
-                    new Kwf.Ext4.Controller.Bindable.Grid({
+                    new Densa.mvc.bindable.Grid({
                         grid: this.getContactsGrid(),
                         relation: 'contacts',
                         reloadRowOnSave: true
