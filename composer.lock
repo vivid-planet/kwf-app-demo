@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/densajs.git",
-                "reference": "bb70bb2e0706f26217b745663b859a7885c8ef86"
+                "reference": "d80ca555a1c4b220c497b5742b9303fffd975da9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/densajs/zipball/bb70bb2e0706f26217b745663b859a7885c8ef86",
-                "reference": "bb70bb2e0706f26217b745663b859a7885c8ef86",
+                "url": "https://api.github.com/repos/koala-framework/densajs/zipball/d80ca555a1c4b220c497b5742b9303fffd975da9",
+                "reference": "d80ca555a1c4b220c497b5742b9303fffd975da9",
                 "shasum": ""
             },
             "require": {
@@ -31,7 +31,7 @@
             ],
             "description": "DensaJS ExtJS Addons",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2014-06-26 08:50:55"
+            "time": "2014-06-26 10:16:04"
         },
         {
             "name": "koala-framework/koala-framework",
@@ -123,12 +123,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/kwf-densajs.git",
-                "reference": "e48475a3b1b5eb120cd4062eb8f25efab1e24fab"
+                "reference": "a09dc3431db0b25290c7f1a0d45a8f0eb72d0eca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/kwf-densajs/zipball/e48475a3b1b5eb120cd4062eb8f25efab1e24fab",
-                "reference": "e48475a3b1b5eb120cd4062eb8f25efab1e24fab",
+                "url": "https://api.github.com/repos/koala-framework/kwf-densajs/zipball/a09dc3431db0b25290c7f1a0d45a8f0eb72d0eca",
+                "reference": "a09dc3431db0b25290c7f1a0d45a8f0eb72d0eca",
                 "shasum": ""
             },
             "require": {
@@ -147,7 +147,7 @@
             ],
             "description": "DensaJS Integration for Koala Framework",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2014-06-26 09:02:26"
+            "time": "2014-06-26 10:15:35"
         },
         {
             "name": "koala-framework/kwf-extjs",
@@ -155,12 +155,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/kwf-extjs.git",
-                "reference": "2e33f6370741b9636cb513be50995694c3382967"
+                "reference": "3c73b29a5de7a8cab7778bdf8fd5a8d2fb30836b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/kwf-extjs/zipball/2e33f6370741b9636cb513be50995694c3382967",
-                "reference": "2e33f6370741b9636cb513be50995694c3382967",
+                "url": "https://api.github.com/repos/koala-framework/kwf-extjs/zipball/3c73b29a5de7a8cab7778bdf8fd5a8d2fb30836b",
+                "reference": "3c73b29a5de7a8cab7778bdf8fd5a8d2fb30836b",
                 "shasum": ""
             },
             "require": {
@@ -184,7 +184,7 @@
             ],
             "description": "ExtJS Integration for Koala Framework",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2014-06-25 15:00:14"
+            "time": "2014-06-26 10:14:27"
         },
         {
             "name": "koala-framework/library-compass-mixins",
@@ -572,8 +572,12 @@
             "time": "2014-05-28 14:13:03"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
         "koala-framework/koala-framework": 20,
@@ -582,6 +586,10 @@
         "koala-framework/kwf-densajs": 20,
         "koala-framework/densajs": 20
     },
-    "platform": [],
-    "platform-dev": []
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
 }
