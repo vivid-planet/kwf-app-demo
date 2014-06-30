@@ -30,6 +30,6 @@ Ext4.define('App.controller.Members', {
         this.callParent(arguments);
 
         this.mainPanel = this.getView('Members').create();
-        this.mainPanel.down('grid#members').bindStore(this.getMembersStore());
+        this.mainPanel.down('#membersGrid').bindStore(this.getMembersStore());
     }
 });

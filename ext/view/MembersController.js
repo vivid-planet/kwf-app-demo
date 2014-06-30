@@ -6,19 +6,19 @@ Ext4.define('App.view.MembersController', {
         'Densa.mvc.bindable.Grid'
     ],
     control: {
-        form: 'form',
-        grid: '> grid',
-        contactsGrid: '#contacts'
+        memberForm: true,
+        membersGrid: true,
+        membersContactsGrid: true
     },
     init: function() {
         this.callParent(arguments);
         new Densa.grid.controller.Bind({
-            grid: this.getGrid(),
+            grid: this.getMembersGrid(),
             bindable: new Densa.mvc.bindable.Multiple({
                 items: [
-                    this.getForm(),
+                    this.getMemberForm(),
                     new Densa.mvc.bindable.Grid({
-                        grid: this.getContactsGrid(),
+                        grid: this.getMembersContactsGrid(),
                         relation: 'contacts',
                         reloadRowOnSave: true
                     })

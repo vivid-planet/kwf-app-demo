@@ -1,14 +1,18 @@
 Ext4.define('App.view.members.Grid', {
     extend: 'Ext.grid.Panel',
     requires: [
-        'Densa.action.Add', 'Densa.action.ExportCsv', 'Ext.form.field.Text',
-        'Ext.toolbar.TextItem', 'Ext.toolbar.Separator', 'Ext.toolbar.Paging',
+        'Densa.defaultButton.Add',
+        'Densa.defaultButton.ExportCsv',
+        'Ext.form.field.Text',
+        'Ext.toolbar.TextItem',
+        'Ext.toolbar.Separator',
+        'Ext.toolbar.Paging',
         'App.view.members.GridController'
     ],
     controller: 'App.view.members.GridController',
     tbar: [
-        new Densa.action.Add(),
-        new Densa.action.ExportCsv(),
+        new Densa.defaultButton.Add(),
+        new Densa.defaultButton.ExportCsv(),
         { xtype: 'tbseparator' },
         trl('Filter:'),
         {

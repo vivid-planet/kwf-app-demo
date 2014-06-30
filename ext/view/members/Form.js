@@ -2,14 +2,14 @@ Ext4.define('App.view.members.Form', {
     extend: 'Ext.form.Panel',
     uses: [ 'Ext.form.field.Text' ],
     requires: [
-        'Densa.action.Save',
-        'Densa.action.Delete',
+        'Densa.defaultButton.Save',
+        'Densa.defaultButton.Delete',
         'App.view.members.FormController'
     ],
     controller: 'App.view.members.FormController',
     tbar: [
-        new Densa.action.Save(),
-        new Densa.action.Delete()
+        new Densa.defaultButton.Save(),
+        new Densa.defaultButton.Delete()
     ],
     items: [{
         xtype: 'textfield',

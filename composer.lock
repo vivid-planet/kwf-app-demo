@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/densajs.git",
-                "reference": "d80ca555a1c4b220c497b5742b9303fffd975da9"
+                "reference": "391fe23c21f6f16d35936abfabf16b2ba4b21b56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/densajs/zipball/d80ca555a1c4b220c497b5742b9303fffd975da9",
-                "reference": "d80ca555a1c4b220c497b5742b9303fffd975da9",
+                "url": "https://api.github.com/repos/koala-framework/densajs/zipball/391fe23c21f6f16d35936abfabf16b2ba4b21b56",
+                "reference": "391fe23c21f6f16d35936abfabf16b2ba4b21b56",
                 "shasum": ""
             },
             "require": {
@@ -31,7 +31,7 @@
             ],
             "description": "DensaJS ExtJS Addons",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2014-06-26 10:16:04"
+            "time": "2014-06-30 13:40:06"
         },
         {
             "name": "koala-framework/koala-framework",
