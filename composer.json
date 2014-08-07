@@ -5,5 +5,7 @@
         "koala-framework/kwf-deftjs": "dev-master",
         "koala-framework/kwf-densajs": "dev-master",
         "koala-framework/densajs": "dev-master"
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

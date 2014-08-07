@@ -8,4 +8,7 @@ kwf-lib
 config.local.ini
 library
 build
-vendor
+/vendor
+.bowerrc
+*.kdev4
+
