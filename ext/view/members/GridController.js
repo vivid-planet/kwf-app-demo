@@ -1,7 +1,6 @@
 Ext4.define('App.view.members.GridController', {
     extend: 'Densa.grid.PanelController',
-    autoLoad: true,
-
+    alias: 'controller.members.grid',
     init: function() {
         this.callParent(arguments);
     }

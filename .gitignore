@@ -6,6 +6,7 @@ update
 eventlog
 kwf-lib
 config.local.ini
-library
-build
-vendor
+/build
+/vendor
+.bowerrc
+*.kdev4

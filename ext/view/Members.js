@@ -1,43 +1,73 @@
 Ext4.define('App.view.Members', {
     extend: 'Ext.panel.Panel',
-    uses: [
+    requires: [
+        'App.view.MembersController',
+        'App.view.MembersModel',
+
         'App.view.members.Grid',
         'App.view.members.Form',
-        'App.view.members.contacts.Grid'
+        'App.view.members.contacts.Grid',
+        'Ext.tab.Panel',
+        'Densa.defaultButton.Save',
+        'Densa.defaultButton.Delete'
     ],
-    requires: [ 'App.view.MembersController' ],
-    controller: 'App.view.MembersController',
+    controller: 'members',
+    viewModel: {
+        type: 'members'
+    },
     layout: 'border',
     stateid: 'Members',
     stateful: true,
+    session: true,
     initComponent: function() {
-        this.items = [Ext4.create('App.view.members.Grid', {
+        this.items = [{
+            xtype: 'members.grid',
             region: 'west',
-            width: 300,
+            width: 400,
             border: false,
-            itemId: 'members',
+            reference: 'membersGrid',
             split: true,
+            resizeable: true,
             stateful: true,
-            stateId: this.stateId+'Grid'
-        }), {
+            stateId: this.stateId+'Grid',
+            bind: '{members}'
+        }, {
             region: 'center',
             layout: 'border',
-            items: [
-                Ext4.create('App.view.members.Form', {
-                    region: 'center',
+            disabled: true,
+            bind: {
+                disabled: '{!membersGrid.selection}'
+            },
+            items: [{
+                xtype: 'tabpanel',
+                region: 'center',
+                tbar: [
+                    { xtype: 'densa.defaultButton.save' },
+                    { xtype: 'densa.defaultButton.delete' }
+                ],
+                session: true,
+                items: [{
+                    title: trl('Member'),
+                    xtype: 'members.form',
                     bodyPadding: '10',
+                    reference: 'memberForm',
                     stateful: true,
-                    stateId: this.stateId+'Form'
-                }),
-                Ext4.create('App.view.members.contacts.Grid', {
-                    region: 'south',
-                    itemId: 'contacts',
-                    height: 200,
-                    split: true,
-                    stateful: true,
-                    stateId: this.stateId+'ContactsGrid'
-                })
-            ]
+                    stateId: this.stateId+'Form',
+                    bind: '{membersGrid.selection}'
+                },{
+                    title: trl('Test'),
+                    html: 'Test'
+                }]
+            },{
+                xtype: 'members.contacts.grid',
+                region: 'south',
+                reference: 'contactsGrid',
+                height: 200,
+                split: true,
+                stateful: true,
+                stateId: this.stateId+'ContactsGrid',
+                bind: '{membersGrid.selection.memberContacts}'
+            }]
         }];
 
         this.callParent(arguments);

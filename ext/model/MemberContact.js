@@ -1,39 +1,12 @@
 Ext4.define('App.model.MemberContact', {
-    extend: 'Ext.data.Model',
-    requires: ['Ext.data.UuidGenerator'],
-    idProperty: 'id',
-    idgen: 'uuid',
+    extend: 'App.model.Abstract',
     fields: [
-        {name: 'id', type: 'string'},
+//         {name: 'id', type: 'string'},
         {name: 'subject', type: 'string'},
         {name: 'text', type: 'string'},
-        {name: 'member_id', type: 'string'},
+        {name: 'member_id', type: 'string', reference: 'Member'},
     ],
-
-    belongsTo: [
-        {
-            name: 'member',
-            instanceName: 'member',
-            model: 'App.model.Member',
-            foreignKey: 'member_id',
-            getterName: 'getMember',
-            setterName: 'setMember'
+        proxy: {
+            url: '/api/member-contacts',
         }
-    ],
-
-    proxy: {
-        type: 'rest',
-        url: '/api/member-contacts',
-
-        reader: {
-            type: 'json',
-            root: 'data'
-        },
-
-        writer: {
-            type: 'json',
-            nameProperty: 'mapping',
-            writeAllFields: false
-        }
-    }
 });

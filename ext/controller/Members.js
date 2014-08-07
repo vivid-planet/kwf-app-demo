@@ -20,16 +20,10 @@ Ext4.define('App.controller.Members', {
     controller: [
     ],
 
-    onLaunch: function()
-    {
-        this.callParent(arguments);
-    },
-
     init: function()
     {
         this.callParent(arguments);
-
         this.mainPanel = this.getView('Members').create();
-        this.mainPanel.down('grid#members').bindStore(this.getMembersStore());
+//         this.mainPanel.lookupReference('membersGrid').bindStore(this.getMembersStore());
     }
 });

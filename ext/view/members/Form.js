@@ -1,27 +1,34 @@
 Ext4.define('App.view.members.Form', {
-    extend: 'Ext.form.Panel',
+    extend: 'Densa.form.Panel',
+    alias: 'widget.members.form',
     uses: [ 'Ext.form.field.Text' ],
     requires: [
-        'Densa.action.Save',
-        'Densa.action.Delete',
+        'App.view.members.FormModel',
         'App.view.members.FormController'
     ],
-    controller: 'App.view.members.FormController',
-    tbar: [
-        new Densa.action.Save(),
-        new Densa.action.Delete()
-    ],
+    viewModel: {
+        type: 'members.form'
+    },
+    controller: 'members.form',
     items: [{
         xtype: 'textfield',
         name: 'firstname',
-        fieldLabel: trl('Firstname')
+        fieldLabel: trl('Firstname'),
+        bind: '{record.firstname}'
     },{
         xtype: 'textfield',
         name: 'lastname',
-        fieldLabel: trl('Lastname')
+        fieldLabel: trl('Lastname'),
+        bind: '{record.lastname}'
     },{
         xtype: 'textfield',
         name: 'title',
-        fieldLabel: trl('Title')
+        fieldLabel: trl('Title'),
+        bind: '{record.title}'
+    },{
+        xtype: 'textfield',
+        name: 'email',
+        fieldLabel: trl('E-Mail'),
+        bind: '{record.email}'
     }]
 });

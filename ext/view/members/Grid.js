@@ -1,21 +1,25 @@
 Ext4.define('App.view.members.Grid', {
-    extend: 'Ext.grid.Panel',
+    extend: 'Densa.grid.Panel',
+    alias: 'widget.members.grid',
     requires: [
-        'Densa.action.Add', 'Densa.action.ExportCsv', 'Ext.form.field.Text',
+        'Densa.defaultButton.Add', 'Densa.defaultButton.ExportCsv', 'Ext.form.field.Text',
         'Ext.toolbar.TextItem', 'Ext.toolbar.Separator', 'Ext.toolbar.Paging',
-        'App.view.members.GridController'
+        'App.view.members.GridController',
+        'Densa.defaultButton.Delete',
     ],
-    controller: 'App.view.members.GridController',
+    controller: 'members.grid',
     tbar: [
-        new Densa.action.Add(),
-        new Densa.action.ExportCsv(),
+        { xtype: 'densa.defaultButton.add' },
+        { xtype: 'densa.defaultButton.exportCsv' },
+        { xtype: 'densa.defaultButton.delete' },
         { xtype: 'tbseparator' },
         trl('Filter:'),
         {
             xtype: 'textfield',
             itemId: 'text',
             width: 150,
-            name: 'query'
+            name: 'query',
+            value: 'a'
         }
     ],
     viewConfig: {

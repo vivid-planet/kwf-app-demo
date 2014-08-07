@@ -5,7 +5,7 @@ class Acl extends Kwf_Acl
     {
         parent::__construct();
 
-        $this->add(new Kwf_Acl_Resource_MenuExt4('members',
+        $this->add(new Kwf_Ext_AclResource_Menu('members',
             array('text'=>trlStatic('Customers'), 'icon'=>'user.png'),
             'Members'
         ));
