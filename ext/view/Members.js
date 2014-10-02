@@ -1,4 +1,4 @@
-Ext4.define('App.view.Members', {
+Ext.define('App.view.Members', {
     extend: 'Ext.panel.Panel',
     requires: [
         'App.view.MembersController',

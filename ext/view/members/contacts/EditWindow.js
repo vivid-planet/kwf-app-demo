@@ -1,4 +1,4 @@
-Ext4.define('App.view.members.contacts.EditWindow', {
+Ext.define('App.view.members.contacts.EditWindow', {
 //     extend: 'Densa.editWindow.Window',
     extend: 'Densa.editWindow.Window',
     requires: [
@@ -11,7 +11,7 @@ Ext4.define('App.view.members.contacts.EditWindow', {
 
     initComponent: function()
     {
-        this.form = Ext4.create('App.view.members.contacts.Form', {
+        this.form = Ext.create('App.view.members.contacts.Form', {
             stateId: this.stateId+'Form'
         });
         this.items = [this.form];

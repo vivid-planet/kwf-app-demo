@@ -1,5 +1,5 @@
-Ext4.define('App.controller.Members', {
-    extend: 'Kwf.Ext4.App.MainController',
+Ext.define('App.controller.Members', {
+    extend: 'Kwf.Ext.App.MainController',
 
     requires: [
         'App.view.Members',

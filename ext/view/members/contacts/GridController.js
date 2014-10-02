@@ -1,4 +1,4 @@
-Ext4.define('App.view.members.contacts.GridController', {
+Ext.define('App.view.members.contacts.GridController', {
     //extend: 'Densa.grid.PanelController',
     extend: 'Ext.app.ViewController',
     alias: 'controller.members.contacts.grid',
@@ -22,6 +22,7 @@ Ext4.define('App.view.members.contacts.GridController', {
                 //parent: this.getView().lookupViewModel()
             }
         });
+        this.editWindow.on('save', this.onSaveClick, this);
 
         this.getView().on('celldblclick', function(grid, td, cellIndex, row, tr, rowIndex, e) {
             this.editWindow.getViewModel().linkTo('record', row);
@@ -29,17 +30,24 @@ Ext4.define('App.view.members.contacts.GridController', {
         }, this);
     },
 
+    onSaveClick: function()
+    {
+        var row = this.editWindow.getViewModel().get('record');
+        if (row.phantom) {
+            this.getView().getStore().add(row);
+        }
+    },
+
     onAddClick: function()
     {
         var row = this.getView().getStore().model.create();
-        this.getView().getStore().add(row);
         this.editWindow.getViewModel().set('record', row);
         this.editWindow.show();
     },
 
     onDeleteClick: function()
     {
-        Ext4.each(this.getView().getSelection(), function(i) {
+        Ext.each(this.getView().getSelection(), function(i) {
             i.drop();
         }, this);
         var batch = this.getView().lookupSession().getSaveBatch();

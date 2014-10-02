@@ -1,3 +1,3 @@
-Ext4.define('App.view.members.contacts.FormController', {
+Ext.define('App.view.members.contacts.FormController', {
     extend: 'Densa.form.PanelController'
 });

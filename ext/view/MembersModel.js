@@ -1,4 +1,4 @@
-Ext4.define('App.view.MembersModel', {
+Ext.define('App.view.MembersModel', {
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.members',
     stores: {

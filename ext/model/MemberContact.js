@@ -1,4 +1,4 @@
-Ext4.define('App.model.MemberContact', {
+Ext.define('App.model.MemberContact', {
     extend: 'App.model.Abstract',
     fields: [
 //         {name: 'id', type: 'string'},

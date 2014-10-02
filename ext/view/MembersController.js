@@ -1,4 +1,4 @@
-Ext4.define('App.view.MembersController', {
+Ext.define('App.view.MembersController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.members',
     requires: [

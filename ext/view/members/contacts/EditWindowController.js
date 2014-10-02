@@ -1,4 +1,4 @@
-Ext4.define('App.view.members.contacts.EditWindowController', {
+Ext.define('App.view.members.contacts.EditWindowController', {
 //     extend: 'Densa.editWindow.WindowController',
     extend: 'Ext.app.ViewController',
     alias: 'controller.members.contacts.editWindow',
@@ -12,12 +12,12 @@ Ext4.define('App.view.members.contacts.EditWindowController', {
 
     init: function()
     {
-//         this.bindable = this.getForm();
         this.callParent(arguments);
     },
 
     onSaveClick: function()
     {
+        this.fireViewEvent('save');
         this.getView().getSession().save();
         var batch = this.getView().getSession().getParent().getSaveBatch();
         if (batch) {

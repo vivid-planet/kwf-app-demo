@@ -1,4 +1,4 @@
-Ext4.define('App.view.members.Grid', {
+Ext.define('App.view.members.Grid', {
     extend: 'Densa.grid.Panel',
     alias: 'widget.members.grid',
     requires: [

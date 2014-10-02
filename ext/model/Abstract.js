@@ -1,4 +1,4 @@
-Ext4.define('App.model.Abstract', {
+Ext.define('App.model.Abstract', {
     extend: 'Ext.data.Model',
     requires: ['Ext.data.identifier.Uuid'],
     idProperty: 'id',

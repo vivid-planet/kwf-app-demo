@@ -1,4 +1,4 @@
-Ext4.define('App.view.members.contacts.Form', {
+Ext.define('App.view.members.contacts.Form', {
     extend: 'Ext.form.Panel',
     uses: [ 'Ext.form.field.Text' ],
 //     requires: [ 'App.view.members.contacts.FormController' ],

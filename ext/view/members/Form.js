@@ -1,4 +1,4 @@
-Ext4.define('App.view.members.Form', {
+Ext.define('App.view.members.Form', {
     extend: 'Densa.form.Panel',
     alias: 'widget.members.form',
     uses: [ 'Ext.form.field.Text' ],

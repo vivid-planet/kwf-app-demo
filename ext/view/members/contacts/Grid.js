@@ -1,4 +1,4 @@
-Ext4.define('App.view.members.contacts.Grid', {
+Ext.define('App.view.members.contacts.Grid', {
     extend: 'Ext.grid.Panel',
     requires: ['Densa.defaultButton.Add', 'Densa.defaultButton.Delete', 'App.view.members.contacts.GridController'],
 //     controller: 'App.view.members.contacts.GridController',
