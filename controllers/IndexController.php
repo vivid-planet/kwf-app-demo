@@ -1,5 +1,5 @@
 <?php
-class IndexController extends Kwf_Controller_Action
+class WelcomeController extends Kwf_Controller_Action
 {
     public function indexAction()
     {

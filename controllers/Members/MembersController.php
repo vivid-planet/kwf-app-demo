@@ -1,10 +1,15 @@
 <?php
-class MembersController extends Kwf_Controller_Action_Auto_Grid
+class Members_MembersController extends Kwf_Controller_Action_Auto_Grid
 {
     protected $_modelName = 'Members';
     protected $_defaultOrder = 'lastname';
     protected $_paging = 20;
     protected $_buttons = array('add');
+
+    public function indexAction()
+    {
+        $this->view->ext('Members');
+    }
 
     protected function _initColumns()
     {

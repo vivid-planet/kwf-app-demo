@@ -1,12 +1,12 @@
 <?php
-class MemberContactsController extends Kwf_Controller_Action_Auto_Grid
+class Members_MemberContactsController extends Kwf_Controller_Action_Auto_Grid
 {
     protected $_modelName = 'MemberContacts';
     protected $_defaultOrder = 'date';
     protected $_paging = 0;
     protected $_buttons = array('add', 'delete');
     protected $_editDialog = array(
-        'controllerUrl' => '/member-contact',
+        'controllerUrl' => '/members/member-contact',
         'width' => 450,
         'height' => 200
     );

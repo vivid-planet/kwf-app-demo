@@ -3,12 +3,12 @@ var Members = Ext.extend(Ext.Panel,
     initComponent : function()
     {
         var form = new Kwf.Auto.FormPanel({
-            controllerUrl   : '/member',
+            controllerUrl   : '/members/member',
             region          : 'center'
         });
 
         var contacts = new Kwf.Auto.GridPanel({
-            controllerUrl   : '/member-contacts',
+            controllerUrl   : '/members/member-contacts',
             region          : 'south',
             height          : 200,
             resizable       : true,
@@ -18,7 +18,7 @@ var Members = Ext.extend(Ext.Panel,
         });
 
         var grid = new Kwf.Auto.GridPanel({
-            controllerUrl   : '/members',
+            controllerUrl   : '/members/members',
             region          : 'west',
             width           : 300,
             resizable       : true,

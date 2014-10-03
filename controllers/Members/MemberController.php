@@ -1,5 +1,5 @@
 <?php
-class MemberController extends Kwf_Controller_Action_Auto_Form
+class Members_MemberController extends Kwf_Controller_Action_Auto_Form
 {
     protected $_buttons = array('save');
     protected $_permissions = array('save', 'add');
