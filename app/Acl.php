@@ -14,5 +14,6 @@ class Acl extends Kwf_Acl
 
         $this->allow('guest', 'members_index');
         $this->allow('guest', 'kwf_media_upload');
+        $this->allow('guest', 'default_index');
     }
 }
