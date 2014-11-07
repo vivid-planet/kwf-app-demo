@@ -1,5 +1,7 @@
 {
     "require": {
-        "koala-framework/koala-framework": "dev-master"
-    }
+        "koala-framework/koala-framework": "dev-node-sass"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
