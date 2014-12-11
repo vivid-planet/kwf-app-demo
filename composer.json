@@ -1,10 +1,9 @@
 {
     "require": {
-        "koala-framework/koala-framework": "dev-master",
-        "koala-framework/kwf-extjs": "dev-master",
-        "koala-framework/kwf-deftjs": "dev-master",
-        "koala-framework/kwf-densajs": "dev-master",
-        "koala-framework/densajs": "dev-master"
+        "koala-framework/koala-framework": "3.8.x-dev",
+        "koala-framework/kwf-extjs": "3.8.x-dev",
+        "koala-framework/kwf-deftjs": "3.8.x-dev",
+        "koala-framework/kwf-densajs": "3.8.x-dev"
     },
     "minimum-stability": "dev",
     "prefer-stable": true

@@ -1,14 +1,8 @@
 querylog
-vps-lib
-config.db.ini
-include_path
-update
 eventlog
-kwf-lib
 config.local.ini
-library
-build
+/build
 /vendor
-.bowerrc
+/.bowerrc
+/bower.json
 *.kdev4
-
