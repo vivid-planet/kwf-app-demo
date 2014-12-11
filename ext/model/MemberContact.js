@@ -1,3 +1,5 @@
+// @require Ext.data.association.BelongsTo
+
 Ext4.define('App.model.MemberContact', {
     extend: 'Ext.data.Model',
     requires: ['Ext.data.UuidGenerator'],
