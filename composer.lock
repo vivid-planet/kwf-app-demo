@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f13a6dd6c08679eebaa575d188e55f69",
+    "hash": "ed06e218a81800bacb361be30602d7e9",
     "packages": [
         {
             "name": "koala-framework/composer-extra-assets",
-            "version": "v1.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/composer-extra-assets.git",
-                "reference": "f662a64cabf23d66caee90d53862cc8a44397e29"
+                "reference": "b7a97bffbe815f92b1976523abdae836feb45d3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/composer-extra-assets/zipball/f662a64cabf23d66caee90d53862cc8a44397e29",
-                "reference": "f662a64cabf23d66caee90d53862cc8a44397e29",
+                "url": "https://api.github.com/repos/koala-framework/composer-extra-assets/zipball/b7a97bffbe815f92b1976523abdae836feb45d3e",
+                "reference": "b7a97bffbe815f92b1976523abdae836feb45d3e",
                 "shasum": ""
             },
             "require": {
@@ -28,9 +28,6 @@
                 "class": "Kwf\\ComposerExtraAssets\\Plugin",
                 "branch-alias": {
                     "dev-master": "1.0-dev"
-                },
-                "require-npm": {
-                    "bower": "*"
                 }
             },
             "autoload": {
@@ -44,20 +41,20 @@
             ],
             "description": "Composer Plugin for installing Assets using native npm/bower",
             "homepage": "https://github.com/koala-framework/composer-extra-assets",
-            "time": "2014-09-14 20:26:30"
+            "time": "2014-12-07 10:39:35"
         },
         {
             "name": "koala-framework/extjs2",
-            "version": "v2.3.0-p3",
+            "version": "v2.3.0-p4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/extjs2.git",
-                "reference": "2055f6af9a9a238142e9e468a4510a271ee61be8"
+                "reference": "d0f1352c13cdc09f70b00d63faebc0bf5cd9ca21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/extjs2/zipball/2055f6af9a9a238142e9e468a4510a271ee61be8",
-                "reference": "2055f6af9a9a238142e9e468a4510a271ee61be8",
+                "url": "https://api.github.com/repos/koala-framework/extjs2/zipball/d0f1352c13cdc09f70b00d63faebc0bf5cd9ca21",
+                "reference": "d0f1352c13cdc09f70b00d63faebc0bf5cd9ca21",
                 "shasum": ""
             },
             "type": "library",
@@ -67,31 +64,31 @@
             ],
             "description": "ExtJS JavaScript Library",
             "homepage": "http://www.sencha.com/products/extjs/",
-            "time": "2014-10-23 12:19:31"
+            "time": "2014-12-06 10:02:52"
         },
         {
             "name": "koala-framework/koala-framework",
-            "version": "dev-node-sass",
+            "version": "3.8.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/koala-framework.git",
-                "reference": "c7187b19af3f64d131c37b21253bb1bcfe4c853f"
+                "reference": "961ba91e9a6be03a3db5ad417de4418a4143193e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/koala-framework/zipball/c7187b19af3f64d131c37b21253bb1bcfe4c853f",
-                "reference": "c7187b19af3f64d131c37b21253bb1bcfe4c853f",
+                "url": "https://api.github.com/repos/koala-framework/koala-framework/zipball/961ba91e9a6be03a3db5ad417de4418a4143193e",
+                "reference": "961ba91e9a6be03a3db5ad417de4418a4143193e",
                 "shasum": ""
             },
             "require": {
-                "koala-framework/composer-extra-assets": "1.0.0",
+                "koala-framework/composer-extra-assets": "1.0.x-dev",
                 "koala-framework/extjs2": "2.3.0.*",
                 "koala-framework/kwf-modernizr": "3.8.x-dev",
                 "koala-framework/library-css3pie": "1.0.0",
                 "koala-framework/library-htmlawed": "1.1.14",
                 "koala-framework/library-silkicons": "1.3",
                 "koala-framework/library-swfupload": "2.2.0.1",
-                "koala-framework/sourcemaps": "0.1.0",
+                "koala-framework/sourcemaps": "0.1.x-dev",
                 "koala-framework/zendframework1": "1.12.6",
                 "twig/twig": "1.16.1"
             },
@@ -112,18 +109,18 @@
                     "jquery": "1.11.1",
                     "jquery.transit": "0.9.9",
                     "jquery.easing": "1.3.0",
-                    "mustache.js": "0.8.2",
-                    "susy": "nsams/susy#8161395e8ad5d75a0a15a0355feb9853ebaad369",
+                    "underscore": "1.7.0",
+                    "susy": "vivid-planet/susy#8161395e8ad5d75a0a15a0355feb9853ebaad369",
                     "compass-mixins": "1.0.2",
                     "tinymce": "tinymce/tinymce#3.5.8"
                 },
                 "require-npm": {
                     "uglify-js": "2.4.13",
-                    "node-sass": "1.2.2"
+                    "node-sass": "1.2.3"
                 },
                 "require-dev-bower": {
                     "qunit": "1.14.0",
-                    "qunit-phantomjs-runner": "jonkemp/qunit-phantomjs-runner#1.2.0"
+                    "qunit-phantomjs-runner": "vivid-planet/qunit-phantomjs-runner#e96347ee33b773160cf061d7b1b5c4ad3d1d9082"
                 }
             },
             "autoload": {
@@ -138,7 +135,7 @@
             ],
             "description": "Framework and CMS based on Zend Framework and ExtJS",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2014-11-07 12:47:07"
+            "time": "2014-12-07 11:31:36"
         },
         {
             "name": "koala-framework/kwf-modernizr",
@@ -146,16 +143,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/kwf-modernizr.git",
-                "reference": "4936f95e118011878f7be4eda95a79f0fd40e871"
+                "reference": "0e62ee2164f14b2262af4a7e443c11fcb4e8d5ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/kwf-modernizr/zipball/4936f95e118011878f7be4eda95a79f0fd40e871",
-                "reference": "4936f95e118011878f7be4eda95a79f0fd40e871",
+                "url": "https://api.github.com/repos/koala-framework/kwf-modernizr/zipball/0e62ee2164f14b2262af4a7e443c11fcb4e8d5ba",
+                "reference": "0e62ee2164f14b2262af4a7e443c11fcb4e8d5ba",
                 "shasum": ""
-            },
-            "require": {
-                "koala-framework/composer-extra-assets": "1.0.0"
             },
             "require-dev": {
                 "koala-framework/koala-framework": "3.8.x-dev",
@@ -180,7 +174,7 @@
             ],
             "description": "Modernizr Integration for Koala Framework",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2014-10-22 08:07:18"
+            "time": "2014-11-25 17:01:59"
         },
         {
             "name": "koala-framework/library-css3pie",
@@ -313,22 +307,27 @@
         },
         {
             "name": "koala-framework/sourcemaps",
-            "version": "v0.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/sourcemaps.git",
-                "reference": "1fab7fc4790f19c737fef2d4a6bb79b371dc8770"
+                "reference": "d9862cd498b199d92531ec25506f37fbe9b97dc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/sourcemaps/zipball/1fab7fc4790f19c737fef2d4a6bb79b371dc8770",
-                "reference": "1fab7fc4790f19c737fef2d4a6bb79b371dc8770",
+                "url": "https://api.github.com/repos/koala-framework/sourcemaps/zipball/d9862cd498b199d92531ec25506f37fbe9b97dc5",
+                "reference": "d9862cd498b199d92531ec25506f37fbe9b97dc5",
                 "shasum": ""
             },
             "require-dev": {
                 "phpunit/phpunit": "3.7.*"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Kwf_SourceMaps_": ""
@@ -340,7 +339,7 @@
             ],
             "description": "Sourcemaps Utities",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2014-11-05 15:31:37"
+            "time": "2014-11-25 16:06:57"
         },
         {
             "name": "koala-framework/zendframework1",
@@ -390,12 +389,12 @@
             "version": "v1.16.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fabpot/Twig.git",
+                "url": "https://github.com/twigphp/Twig.git",
                 "reference": "7c4c01dcf578523cfcddf383641a4f12790270ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/7c4c01dcf578523cfcddf383641a4f12790270ec",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/7c4c01dcf578523cfcddf383641a4f12790270ec",
                 "reference": "7c4c01dcf578523cfcddf383641a4f12790270ec",
                 "shasum": ""
             },
