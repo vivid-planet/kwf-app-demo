@@ -3,7 +3,11 @@
 
 Ext4.define('App.model.Member', {
     extend: 'Ext.data.Model',
-    requires: ['Ext.data.UuidGenerator', 'App.model.MemberContact'],
+    requires: [
+        'Ext.data.UuidGenerator',
+        'App.model.MemberContact',
+        'Kwf.Ext4.model.Uploads'
+    ],
     idProperty: 'id',
     idgen: 'uuid',
     fields: [
@@ -11,6 +15,7 @@ Ext4.define('App.model.Member', {
         {name: 'firstname', type: 'string'},
         {name: 'lastname', type: 'string'},
         {name: 'title', type: 'string'},
+        {name: 'picture_id', type: 'string'},
         {name: 'count_contacts', type: 'int', persist: false}
     ],
     hasMany: [
@@ -21,6 +26,16 @@ Ext4.define('App.model.Member', {
             foreignKey: 'member_id',
             autoLoad: false,
             storeConfig: { remoteFilter: true }
+        }
+    ],
+    belongsTo: [
+        {
+            name: 'picture',
+            instanceName: 'picture',
+            model: 'Kwf.Ext4.model.Uploads',
+            foreignKey: 'picture_id',
+            getterName: 'getPicture',
+            setterName: 'setPicture'
         }
     ],
     proxy: {

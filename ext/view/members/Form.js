@@ -4,7 +4,8 @@ Ext4.define('App.view.members.Form', {
     requires: [
         'Densa.defaultButton.Save',
         'Densa.defaultButton.Delete',
-        'App.view.members.FormController'
+        'App.view.members.FormController',
+        'Kwf.Ext4.form.field.File'
     ],
     controller: 'App.view.members.FormController',
     tbar: [
@@ -23,5 +24,9 @@ Ext4.define('App.view.members.Form', {
         xtype: 'textfield',
         name: 'title',
         fieldLabel: trl('Title')
+    },{
+        xtype: 'kwf.filefield',
+        name: 'picture_id',
+        fieldLabel: trl('Photo')
     }]
 });

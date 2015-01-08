@@ -6,9 +6,27 @@ Kwf_Setup::dispatchMedia();
 
 $front = Kwf_Controller_Front::getInstance();
 $front->addControllerDirectory('vendor/koala-framework/kwf-extjs/Kwf/Ext/Controller', 'kwf_ext_controller');
-if ($front->getRouter() instanceof Kwf_Controller_Router) {
-    $front->getRouter()->addRoute('ext4', new Kwf_Ext_Route());
+$router = $front->getRouter();
+if ($router instanceof Kwf_Controller_Router) {
+    $router->addRoute('ext4', new Kwf_Ext_Route());
+
+    $apiRoute = new Zend_Controller_Router_Route('api');
+    $restRoute = new Kwf_Rest_Route(
+        $front,
+        array(
+            'module' => 'kwf_controller_action_media'
+        ),
+        array(
+            'kwf_controller_action_media' => array(
+                'uploads'
+            )
+        )
+    );
+    $chainedRoute = new Kwf_Controller_Router_Route_Chain();
+    $chainedRoute->chain($apiRoute)
+                ->chain($restRoute);
+    $router->addRoute('api_uploads', $chainedRoute);
 }
-$front = Kwf_Controller_Front::getInstance();
+
 $response = $front->dispatch();
 $response->sendResponse();
