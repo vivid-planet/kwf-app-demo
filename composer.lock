@@ -72,12 +72,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/koala-framework.git",
-                "reference": "10754cae28fedb70b18120e8a6e45d27e434a872"
+                "reference": "1a96075102954cdcb24adbaceb06b0711cff9667"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/koala-framework/zipball/10754cae28fedb70b18120e8a6e45d27e434a872",
-                "reference": "10754cae28fedb70b18120e8a6e45d27e434a872",
+                "url": "https://api.github.com/repos/koala-framework/koala-framework/zipball/1a96075102954cdcb24adbaceb06b0711cff9667",
+                "reference": "1a96075102954cdcb24adbaceb06b0711cff9667",
                 "shasum": ""
             },
             "require": {
@@ -136,7 +136,7 @@
             ],
             "description": "Framework and CMS based on Zend Framework and ExtJS",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2015-01-08 12:20:33"
+            "time": "2015-02-04 17:43:03"
         },
         {
             "name": "koala-framework/kwf-deftjs",
@@ -144,12 +144,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/kwf-deftjs.git",
-                "reference": "f5b137971992251b8e6a86ee257aea320cf30e3f"
+                "reference": "63726cce6e04513a927ead7e93b0ecbef9b2068b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/kwf-deftjs/zipball/f5b137971992251b8e6a86ee257aea320cf30e3f",
-                "reference": "f5b137971992251b8e6a86ee257aea320cf30e3f",
+                "url": "https://api.github.com/repos/koala-framework/kwf-deftjs/zipball/63726cce6e04513a927ead7e93b0ecbef9b2068b",
+                "reference": "63726cce6e04513a927ead7e93b0ecbef9b2068b",
                 "shasum": ""
             },
             "require": {
@@ -175,7 +175,7 @@
             ],
             "description": "DeftJS Integration for Koala Framework",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2015-01-08 12:58:27"
+            "time": "2015-02-04 17:54:34"
         },
         {
             "name": "koala-framework/kwf-densajs",
@@ -183,12 +183,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/kwf-densajs.git",
-                "reference": "5bb40e6c4ffe88b8cf047e6af24100d8dd547f09"
+                "reference": "43bf2e79192fdff2696f166f3556ebf790c57214"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/kwf-densajs/zipball/5bb40e6c4ffe88b8cf047e6af24100d8dd547f09",
-                "reference": "5bb40e6c4ffe88b8cf047e6af24100d8dd547f09",
+                "url": "https://api.github.com/repos/koala-framework/kwf-densajs/zipball/43bf2e79192fdff2696f166f3556ebf790c57214",
+                "reference": "43bf2e79192fdff2696f166f3556ebf790c57214",
                 "shasum": ""
             },
             "require": {
@@ -197,7 +197,7 @@
             "type": "library",
             "extra": {
                 "require-bower": {
-                    "densajs": "6dcc7a94ad5c8bb0dcbbf293f7650780da69f543"
+                    "densajs": "050b5cd476328fc3493654b97a12fe057bb54098"
                 }
             },
             "autoload": {
@@ -211,7 +211,7 @@
             ],
             "description": "DensaJS Integration for Koala Framework",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2015-01-08 12:58:09"
+            "time": "2015-02-04 17:53:24"
         },
         {
             "name": "koala-framework/kwf-extjs",
@@ -219,12 +219,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/kwf-extjs.git",
-                "reference": "f58e21e3ae5572a31e4c7b5919f5852cf9dda3a7"
+                "reference": "0f6616f41c9e36dc7e1898cfcae6de7e478a8cfd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/kwf-extjs/zipball/f58e21e3ae5572a31e4c7b5919f5852cf9dda3a7",
-                "reference": "f58e21e3ae5572a31e4c7b5919f5852cf9dda3a7",
+                "url": "https://api.github.com/repos/koala-framework/kwf-extjs/zipball/0f6616f41c9e36dc7e1898cfcae6de7e478a8cfd",
+                "reference": "0f6616f41c9e36dc7e1898cfcae6de7e478a8cfd",
                 "shasum": ""
             },
             "require": {
@@ -255,7 +255,7 @@
             ],
             "description": "ExtJS Integration for Koala Framework",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2015-01-08 12:57:40"
+            "time": "2015-02-04 17:55:29"
         },
         {
             "name": "koala-framework/kwf-modernizr",
@@ -431,12 +431,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/sourcemaps.git",
-                "reference": "d9862cd498b199d92531ec25506f37fbe9b97dc5"
+                "reference": "e31b2ea76d5c2dd5f4b77ccc2df6f1b05bcb6bea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/sourcemaps/zipball/d9862cd498b199d92531ec25506f37fbe9b97dc5",
-                "reference": "d9862cd498b199d92531ec25506f37fbe9b97dc5",
+                "url": "https://api.github.com/repos/koala-framework/sourcemaps/zipball/e31b2ea76d5c2dd5f4b77ccc2df6f1b05bcb6bea",
+                "reference": "e31b2ea76d5c2dd5f4b77ccc2df6f1b05bcb6bea",
                 "shasum": ""
             },
             "require-dev": {
@@ -459,7 +459,7 @@
             ],
             "description": "Sourcemaps Utities",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2014-11-25 16:06:57"
+            "time": "2015-01-26 14:57:51"
         },
         {
             "name": "koala-framework/zendframework1",
@@ -511,16 +511,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "0180c01f9a0d4ce8fc0f3c89860345965a2a7e17"
+                "reference": "f3ab493718070b936e21b202422466db35c1c298"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/0180c01f9a0d4ce8fc0f3c89860345965a2a7e17",
-                "reference": "0180c01f9a0d4ce8fc0f3c89860345965a2a7e17",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/f3ab493718070b936e21b202422466db35c1c298",
+                "reference": "f3ab493718070b936e21b202422466db35c1c298",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=5.3.9"
             },
             "type": "library",
             "extra": {
@@ -549,7 +549,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2015-01-07 15:58:19"
+            "time": "2015-01-25 04:39:35"
         },
         {
             "name": "twig/twig",
@@ -619,6 +619,7 @@
         "koala-framework/kwf-densajs": 20
     },
     "prefer-stable": true,
+    "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
 }
