@@ -72,12 +72,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/koala-framework.git",
-                "reference": "1a96075102954cdcb24adbaceb06b0711cff9667"
+                "reference": "0fb3b8b9a19404f58abad9ed37db8ff0aeeb7b64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/koala-framework/zipball/1a96075102954cdcb24adbaceb06b0711cff9667",
-                "reference": "1a96075102954cdcb24adbaceb06b0711cff9667",
+                "url": "https://api.github.com/repos/koala-framework/koala-framework/zipball/0fb3b8b9a19404f58abad9ed37db8ff0aeeb7b64",
+                "reference": "0fb3b8b9a19404f58abad9ed37db8ff0aeeb7b64",
                 "shasum": ""
             },
             "require": {
@@ -90,7 +90,7 @@
                 "koala-framework/library-swfupload": "2.2.0.1",
                 "koala-framework/sourcemaps": "0.1.x-dev",
                 "koala-framework/zendframework1": "1.12.6.*",
-                "symfony/process": "2.7.*",
+                "symfony/process": "2.6.*",
                 "twig/twig": "1.16.1"
             },
             "require-dev": {
@@ -136,7 +136,7 @@
             ],
             "description": "Framework and CMS based on Zend Framework and ExtJS",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2015-02-04 17:43:03"
+            "time": "2015-02-05 13:24:25"
         },
         {
             "name": "koala-framework/kwf-deftjs",
@@ -506,26 +506,26 @@
         },
         {
             "name": "symfony/process",
-            "version": "2.7.x-dev",
+            "version": "v2.6.4",
             "target-dir": "Symfony/Component/Process",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "f3ab493718070b936e21b202422466db35c1c298"
+                "reference": "ecfc23e89d9967999fa5f60a1e9af7384396e9ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/f3ab493718070b936e21b202422466db35c1c298",
-                "reference": "f3ab493718070b936e21b202422466db35c1c298",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/ecfc23e89d9967999fa5f60a1e9af7384396e9ae",
+                "reference": "ecfc23e89d9967999fa5f60a1e9af7384396e9ae",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9"
+                "php": ">=5.3.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.7-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -549,7 +549,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2015-01-25 04:39:35"
+            "time": "2015-01-25 04:39:26"
         },
         {
             "name": "twig/twig",
