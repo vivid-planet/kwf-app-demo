@@ -6,3 +6,5 @@ config.local.ini
 /.bowerrc
 /bower.json
 *.kdev4
+config_section
+
