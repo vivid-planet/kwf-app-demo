@@ -10,6 +10,10 @@ class Acl extends Kwf_Acl
             'Members'
         ));
 
+        $this->addResource(new Kwf_Acl_Resource_MenuUrl('members_members',
+                array('text'=>trlStatic('Customers Ext2'), 'icon'=>'user.png'),
+                '/members/members'));
+
         $this->add(new Zend_Acl_Resource('api'));
             $this->add(new Zend_Acl_Resource('api_members'), 'api');
             $this->add(new Zend_Acl_Resource('api_member-contacts'), 'api');
@@ -19,5 +23,6 @@ class Acl extends Kwf_Acl
         $this->allow('guest', 'kwf_media_upload');
         $this->allow('guest', 'api');
         $this->allow('guest', 'members');
+        $this->allow('guest', 'members_members');
     }
 }
