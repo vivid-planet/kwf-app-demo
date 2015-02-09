@@ -45,16 +45,16 @@
         },
         {
             "name": "koala-framework/extjs2",
-            "version": "v2.3.0-p4",
+            "version": "v2.3.0-p5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/extjs2.git",
-                "reference": "d0f1352c13cdc09f70b00d63faebc0bf5cd9ca21"
+                "reference": "b91b8006199c28dccb2f67e6e01dc7714366e96c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/extjs2/zipball/d0f1352c13cdc09f70b00d63faebc0bf5cd9ca21",
-                "reference": "d0f1352c13cdc09f70b00d63faebc0bf5cd9ca21",
+                "url": "https://api.github.com/repos/koala-framework/extjs2/zipball/b91b8006199c28dccb2f67e6e01dc7714366e96c",
+                "reference": "b91b8006199c28dccb2f67e6e01dc7714366e96c",
                 "shasum": ""
             },
             "type": "library",
@@ -64,7 +64,7 @@
             ],
             "description": "ExtJS JavaScript Library",
             "homepage": "http://www.sencha.com/products/extjs/",
-            "time": "2014-12-06 10:02:52"
+            "time": "2015-02-06 07:43:17"
         },
         {
             "name": "koala-framework/koala-framework",
@@ -72,12 +72,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/koala-framework.git",
-                "reference": "0fb3b8b9a19404f58abad9ed37db8ff0aeeb7b64"
+                "reference": "722358916a21002db6625679f1fa080efdd5370d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/koala-framework/zipball/0fb3b8b9a19404f58abad9ed37db8ff0aeeb7b64",
-                "reference": "0fb3b8b9a19404f58abad9ed37db8ff0aeeb7b64",
+                "url": "https://api.github.com/repos/koala-framework/koala-framework/zipball/722358916a21002db6625679f1fa080efdd5370d",
+                "reference": "722358916a21002db6625679f1fa080efdd5370d",
                 "shasum": ""
             },
             "require": {
@@ -136,7 +136,7 @@
             ],
             "description": "Framework and CMS based on Zend Framework and ExtJS",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2015-02-05 13:24:25"
+            "time": "2015-02-09 17:12:35"
         },
         {
             "name": "koala-framework/kwf-deftjs",
