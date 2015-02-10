@@ -21,6 +21,7 @@ class Acl extends Kwf_Acl
 
         $this->allow('guest', 'default_index');
         $this->allow('guest', 'kwf_media_upload');
+        $this->allow('guest', 'kwf_media_post-back');
         $this->allow('guest', 'api');
         $this->allow('guest', 'members');
         $this->allow('guest', 'members_members');
