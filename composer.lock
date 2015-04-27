@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ad79bfc7b9f2a69ea1cfcc76d6a9e71d",
+    "hash": "6490154ddc89542369fbf240fb669448",
     "packages": [
         {
             "name": "koala-framework/composer-extra-assets",
@@ -78,24 +78,24 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/file-watcher.git",
-                "reference": "16ca00a1b7cdac053a1760b45a5385d31b1bc278"
+                "reference": "3a767b7c46ac8fe45ce0aa94088908bad09171b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/file-watcher/zipball/16ca00a1b7cdac053a1760b45a5385d31b1bc278",
-                "reference": "16ca00a1b7cdac053a1760b45a5385d31b1bc278",
+                "url": "https://api.github.com/repos/koala-framework/file-watcher/zipball/3a767b7c46ac8fe45ce0aa94088908bad09171b0",
+                "reference": "3a767b7c46ac8fe45ce0aa94088908bad09171b0",
                 "shasum": ""
             },
             "require": {
-                "monolog/monolog": "1.*",
-                "symfony/event-dispatcher": "2.6.*",
-                "symfony/finder": "2.6.*",
-                "symfony/process": "2.6.*"
+                "psr/log": "~1.0",
+                "symfony/event-dispatcher": "~2.6",
+                "symfony/finder": "~2.6",
+                "symfony/process": "~2.6"
             },
             "require-dev": {
                 "phpunit/php-invoker": "*",
                 "phpunit/phpunit": "4.5.*",
-                "symfony/filesystem": "*"
+                "symfony/filesystem": "~2.6"
             },
             "type": "library",
             "autoload": {
@@ -109,34 +109,35 @@
             ],
             "description": "Library for watching for file system changes",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2015-03-18 18:11:54"
+            "time": "2015-03-25 08:35:54"
         },
         {
             "name": "koala-framework/koala-framework",
-            "version": "dev-master",
+            "version": "3.9.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/koala-framework.git",
-                "reference": "012061d1f8ea4f7d39038b048dd8f6a3b19b316c"
+                "reference": "c5386590f230fff67c38783eb3571de4a61fd6a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/koala-framework/zipball/012061d1f8ea4f7d39038b048dd8f6a3b19b316c",
-                "reference": "012061d1f8ea4f7d39038b048dd8f6a3b19b316c",
+                "url": "https://api.github.com/repos/koala-framework/koala-framework/zipball/c5386590f230fff67c38783eb3571de4a61fd6a8",
+                "reference": "c5386590f230fff67c38783eb3571de4a61fd6a8",
                 "shasum": ""
             },
             "require": {
                 "koala-framework/composer-extra-assets": "1.1.*",
                 "koala-framework/extjs2": "2.3.0.*",
                 "koala-framework/file-watcher": "*",
-                "koala-framework/kwf-modernizr": "dev-master",
                 "koala-framework/library-css3pie": "1.0.0",
                 "koala-framework/library-htmlawed": "1.1.14",
                 "koala-framework/library-silkicons": "1.3",
-                "koala-framework/library-swfupload": "2.2.0.1",
+                "koala-framework/library-swfupload": "2.2.*",
                 "koala-framework/sourcemaps": "0.2.0",
                 "koala-framework/zendframework1": "1.12.6.*",
+                "sepia/po-parser": "4.2.0",
                 "symfony/console": "~2.5",
+                "symfony/process": "~2.5",
                 "twig/twig": "1.16.1"
             },
             "require-dev": {
@@ -165,10 +166,14 @@
                 "require-npm": {
                     "uglify-js": "2.4.13",
                     "node-sass": "2.0.1",
-                    "amdlc": "0.1.5"
+                    "amdlc": "0.1.5",
+                    "esprima": "1.2.2",
+                    "grunt": "0.4.*",
+                    "grunt-cli": "0.1.*",
+                    "grunt-modernizr": "0.5.2"
                 },
                 "require-dev-bower": {
-                    "qunit": "1.14.0",
+                    "qunit": "1.18.0",
                     "qunit-phantomjs-runner": "vivid-planet/qunit-phantomjs-runner#e96347ee33b773160cf061d7b1b5c4ad3d1d9082"
                 },
                 "kwf": {
@@ -179,6 +184,10 @@
                         "koala-framework/composer-extra-assets",
                         "nodejs/nodejs"
                     ]
+                },
+                "kwf-lingohub": {
+                    "account": "koala-framework",
+                    "project": "koala-framework"
                 }
             },
             "autoload": {
@@ -193,24 +202,25 @@
             ],
             "description": "Framework and CMS based on Zend Framework and ExtJS",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2015-03-23 14:53:41"
+            "time": "2015-04-27 13:44:52"
         },
         {
             "name": "koala-framework/kwf-deftjs",
-            "version": "dev-master",
+            "version": "1.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/kwf-deftjs.git",
-                "reference": "63726cce6e04513a927ead7e93b0ecbef9b2068b"
+                "reference": "a323df116c970b211989f2d3be689e49ced65e7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/kwf-deftjs/zipball/63726cce6e04513a927ead7e93b0ecbef9b2068b",
-                "reference": "63726cce6e04513a927ead7e93b0ecbef9b2068b",
+                "url": "https://api.github.com/repos/koala-framework/kwf-deftjs/zipball/a323df116c970b211989f2d3be689e49ced65e7c",
+                "reference": "a323df116c970b211989f2d3be689e49ced65e7c",
                 "shasum": ""
             },
             "require": {
-                "koala-framework/koala-framework": "dev-master"
+                "koala-framework/composer-extra-assets": "~1.1",
+                "koala-framework/koala-framework": "~3.8"
             },
             "type": "library",
             "extra": {
@@ -232,29 +242,29 @@
             ],
             "description": "DeftJS Integration for Koala Framework",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2015-02-04 17:54:34"
+            "time": "2015-04-22 15:18:21"
         },
         {
             "name": "koala-framework/kwf-densajs",
-            "version": "dev-master",
+            "version": "1.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/kwf-densajs.git",
-                "reference": "43bf2e79192fdff2696f166f3556ebf790c57214"
+                "reference": "6e328b831c0cd8686907260e16f0bdce68a160ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/kwf-densajs/zipball/43bf2e79192fdff2696f166f3556ebf790c57214",
-                "reference": "43bf2e79192fdff2696f166f3556ebf790c57214",
+                "url": "https://api.github.com/repos/koala-framework/kwf-densajs/zipball/6e328b831c0cd8686907260e16f0bdce68a160ff",
+                "reference": "6e328b831c0cd8686907260e16f0bdce68a160ff",
                 "shasum": ""
             },
             "require": {
-                "koala-framework/koala-framework": "dev-master"
+                "koala-framework/koala-framework": "~3.8"
             },
             "type": "library",
             "extra": {
                 "require-bower": {
-                    "densajs": "050b5cd476328fc3493654b97a12fe057bb54098"
+                    "densajs": "90d376a446bfb3c00d9b2b90d75afa269333c25b"
                 }
             },
             "autoload": {
@@ -268,24 +278,24 @@
             ],
             "description": "DensaJS Integration for Koala Framework",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2015-02-04 17:53:24"
+            "time": "2015-04-22 15:18:08"
         },
         {
             "name": "koala-framework/kwf-extjs",
-            "version": "dev-master",
+            "version": "1.1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/kwf-extjs.git",
-                "reference": "0f6616f41c9e36dc7e1898cfcae6de7e478a8cfd"
+                "reference": "8f0cf6d76fca47ea059180d9b22f5e028aa646ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/kwf-extjs/zipball/0f6616f41c9e36dc7e1898cfcae6de7e478a8cfd",
-                "reference": "0f6616f41c9e36dc7e1898cfcae6de7e478a8cfd",
+                "url": "https://api.github.com/repos/koala-framework/kwf-extjs/zipball/8f0cf6d76fca47ea059180d9b22f5e028aa646ce",
+                "reference": "8f0cf6d76fca47ea059180d9b22f5e028aa646ce",
                 "shasum": ""
             },
             "require": {
-                "koala-framework/koala-framework": "dev-master"
+                "koala-framework/koala-framework": "~3.9"
             },
             "require-dev": {
                 "phpunit/phpunit": "3.7.*"
@@ -312,49 +322,7 @@
             ],
             "description": "ExtJS Integration for Koala Framework",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2015-02-04 17:55:29"
-        },
-        {
-            "name": "koala-framework/kwf-modernizr",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/koala-framework/kwf-modernizr.git",
-                "reference": "c4f729fe1d9236d81e1658dbdf16991130d31939"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/kwf-modernizr/zipball/c4f729fe1d9236d81e1658dbdf16991130d31939",
-                "reference": "c4f729fe1d9236d81e1658dbdf16991130d31939",
-                "shasum": ""
-            },
-            "require": {
-                "koala-framework/composer-extra-assets": "~1.1"
-            },
-            "require-dev": {
-                "koala-framework/koala-framework": "dev-master",
-                "phpunit/phpunit": "3.7.*"
-            },
-            "type": "library",
-            "extra": {
-                "require-npm": {
-                    "grunt": "0.4.*",
-                    "grunt-cli": "0.1.*",
-                    "grunt-modernizr": "0.5.2"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Kwf_Modernizr_": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "description": "Modernizr Integration for Koala Framework",
-            "homepage": "http://www.koala-framework.org/",
-            "time": "2015-03-20 09:54:57"
+            "time": "2015-04-23 13:14:56"
         },
         {
             "name": "koala-framework/library-css3pie",
@@ -461,16 +429,16 @@
         },
         {
             "name": "koala-framework/library-swfupload",
-            "version": "v2.2.0.1",
+            "version": "v2.2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/library-swfupload.git",
-                "reference": "7eb7c5c2a7a0d7144c2acd35131367c8fcb6683c"
+                "reference": "72c8bd35d50cc7fb85603a2ec77e5699e9e00da2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/library-swfupload/zipball/7eb7c5c2a7a0d7144c2acd35131367c8fcb6683c",
-                "reference": "7eb7c5c2a7a0d7144c2acd35131367c8fcb6683c",
+                "url": "https://api.github.com/repos/koala-framework/library-swfupload/zipball/72c8bd35d50cc7fb85603a2ec77e5699e9e00da2",
+                "reference": "72c8bd35d50cc7fb85603a2ec77e5699e9e00da2",
                 "shasum": ""
             },
             "require": {
@@ -483,7 +451,7 @@
             ],
             "description": "SWFUpload JavaScript Library",
             "homepage": "http://code.google.com/p/swfupload/",
-            "time": "2014-06-02 08:22:41"
+            "time": "2015-04-01 10:23:10"
         },
         {
             "name": "koala-framework/sourcemaps",
@@ -565,90 +533,17 @@
             "time": "2015-03-04 15:09:37"
         },
         {
-            "name": "monolog/monolog",
-            "version": "1.13.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "c31a2c4e8db5da8b46c74cf275d7f109c0f249ac"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/c31a2c4e8db5da8b46c74cf275d7f109c0f249ac",
-                "reference": "c31a2c4e8db5da8b46c74cf275d7f109c0f249ac",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0",
-                "psr/log": "~1.0"
-            },
-            "provide": {
-                "psr/log-implementation": "1.0.0"
-            },
-            "require-dev": {
-                "aws/aws-sdk-php": "~2.4, >2.4.8",
-                "doctrine/couchdb": "~1.0@dev",
-                "graylog2/gelf-php": "~1.0",
-                "phpunit/phpunit": "~4.0",
-                "raven/raven": "~0.5",
-                "ruflin/elastica": "0.90.*",
-                "swiftmailer/swiftmailer": "~5.3",
-                "videlalvaro/php-amqplib": "~2.4"
-            },
-            "suggest": {
-                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
-                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
-                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
-                "ext-mongo": "Allow sending log messages to a MongoDB server",
-                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
-                "raven/raven": "Allow sending log messages to a Sentry server",
-                "rollbar/rollbar": "Allow sending log messages to Rollbar",
-                "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
-                "videlalvaro/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.13.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Monolog\\": "src/Monolog"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jordi Boggiano",
-                    "email": "j.boggiano@seld.be",
-                    "homepage": "http://seld.be"
-                }
-            ],
-            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
-            "homepage": "http://github.com/Seldaek/monolog",
-            "keywords": [
-                "log",
-                "logging",
-                "psr-3"
-            ],
-            "time": "2015-03-09 09:58:04"
-        },
-        {
             "name": "mouf/nodejs-installer",
-            "version": "v1.0.0",
+            "version": "v1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/nodejs-installer.git",
-                "reference": "5ef739a41f10f0c6bc339e13a19a6f680f84fa22"
+                "reference": "68dfb4432ce10a72d610d8e86b4f97bd12504d51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/nodejs-installer/zipball/5ef739a41f10f0c6bc339e13a19a6f680f84fa22",
-                "reference": "5ef739a41f10f0c6bc339e13a19a6f680f84fa22",
+                "url": "https://api.github.com/repos/thecodingmachine/nodejs-installer/zipball/68dfb4432ce10a72d610d8e86b4f97bd12504d51",
+                "reference": "68dfb4432ce10a72d610d8e86b4f97bd12504d51",
                 "shasum": ""
             },
             "require": {
@@ -691,7 +586,7 @@
                 "nodejs",
                 "npm"
             ],
-            "time": "2015-03-12 17:18:52"
+            "time": "2015-04-27 08:15:25"
         },
         {
             "name": "psr/log",
@@ -732,18 +627,66 @@
             "time": "2012-12-21 11:40:51"
         },
         {
+            "name": "sepia/po-parser",
+            "version": "4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/raulferras/PHP-po-parser.git",
+                "reference": "8e5c3d5d6d5a4c6584249d82dc75eb1490cb8470"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/raulferras/PHP-po-parser/zipball/8e5c3d5d6d5a4c6584249d82dc75eb1490cb8470",
+                "reference": "8e5c3d5d6d5a4c6584249d82dc75eb1490cb8470",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "squizlabs/php_codesniffer": "1.5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sepia": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Raúl Ferràs",
+                    "email": "raul.ferras@gmail.com",
+                    "role": "developer"
+                }
+            ],
+            "description": "Gettext *.PO file parser for PHP.",
+            "homepage": "https://github.com/raulferras/PHP-po-parser",
+            "keywords": [
+                "gettext",
+                "i10n",
+                "i18n",
+                "po"
+            ],
+            "time": "2015-01-22 11:03:32"
+        },
+        {
             "name": "symfony/console",
-            "version": "v2.6.5",
+            "version": "v2.6.6",
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "53f86497ccd01677e22435cfb7262599450a90d1"
+                "reference": "5b91dc4ed5eb08553f57f6df04c4730a73992667"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/53f86497ccd01677e22435cfb7262599450a90d1",
-                "reference": "53f86497ccd01677e22435cfb7262599450a90d1",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/5b91dc4ed5eb08553f57f6df04c4730a73992667",
+                "reference": "5b91dc4ed5eb08553f57f6df04c4730a73992667",
                 "shasum": ""
             },
             "require": {
@@ -787,11 +730,11 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2015-03-13 17:37:22"
+            "time": "2015-03-30 15:54:10"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.6.5",
+            "version": "v2.6.6",
             "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
@@ -850,17 +793,17 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v2.6.5",
+            "version": "v2.6.6",
             "target-dir": "Symfony/Component/Finder",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "bebc7479c566fa4f14b9bcef9e32e719eabec74e"
+                "reference": "5dbe2e73a580618f5b4880fda93406eed25de251"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/bebc7479c566fa4f14b9bcef9e32e719eabec74e",
-                "reference": "bebc7479c566fa4f14b9bcef9e32e719eabec74e",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/5dbe2e73a580618f5b4880fda93406eed25de251",
+                "reference": "5dbe2e73a580618f5b4880fda93406eed25de251",
                 "shasum": ""
             },
             "require": {
@@ -896,21 +839,21 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2015-03-12 10:28:44"
+            "time": "2015-03-30 15:54:10"
         },
         {
             "name": "symfony/process",
-            "version": "v2.6.5",
+            "version": "v2.6.6",
             "target-dir": "Symfony/Component/Process",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "4d717f34f3d1d6ab30fbe79f7132960a27f4a0dc"
+                "reference": "a8bebaec1a9dc6cde53e0250e32917579b0be552"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/4d717f34f3d1d6ab30fbe79f7132960a27f4a0dc",
-                "reference": "4d717f34f3d1d6ab30fbe79f7132960a27f4a0dc",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/a8bebaec1a9dc6cde53e0250e32917579b0be552",
+                "reference": "a8bebaec1a9dc6cde53e0250e32917579b0be552",
                 "shasum": ""
             },
             "require": {
@@ -946,7 +889,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2015-03-12 10:28:44"
+            "time": "2015-03-30 15:54:10"
         },
         {
             "name": "twig/twig",
@@ -1009,12 +952,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "koala-framework/koala-framework": 20,
-        "koala-framework/kwf-extjs": 20,
-        "koala-framework/kwf-deftjs": 20,
-        "koala-framework/kwf-densajs": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
