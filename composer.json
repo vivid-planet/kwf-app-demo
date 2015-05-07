@@ -1,9 +1,9 @@
 {
     "require": {
-        "koala-framework/koala-framework": "3.8.x-dev",
-        "koala-framework/kwf-densajs": "dev-ext5",
-        "koala-framework/kwf-extjs": "dev-ext5",
-        "koala-framework/kwf-deftjs": "dev-ext5"
+        "koala-framework/koala-framework": "3.8.*",
+        "koala-framework/kwf-densajs": "~2.0",
+        "koala-framework/kwf-extjs": "~2.0",
+        "koala-framework/kwf-deftjs": "~2.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
