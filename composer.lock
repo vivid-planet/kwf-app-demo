@@ -117,12 +117,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/koala-framework.git",
-                "reference": "c5386590f230fff67c38783eb3571de4a61fd6a8"
+                "reference": "e4500c0ec943bf29e87e068127688928736c54f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/koala-framework/zipball/c5386590f230fff67c38783eb3571de4a61fd6a8",
-                "reference": "c5386590f230fff67c38783eb3571de4a61fd6a8",
+                "url": "https://api.github.com/repos/koala-framework/koala-framework/zipball/e4500c0ec943bf29e87e068127688928736c54f9",
+                "reference": "e4500c0ec943bf29e87e068127688928736c54f9",
                 "shasum": ""
             },
             "require": {
@@ -202,7 +202,7 @@
             ],
             "description": "Framework and CMS based on Zend Framework and ExtJS",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2015-04-27 13:44:52"
+            "time": "2015-05-09 08:07:16"
         },
         {
             "name": "koala-framework/kwf-deftjs",
@@ -250,12 +250,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/kwf-densajs.git",
-                "reference": "6e328b831c0cd8686907260e16f0bdce68a160ff"
+                "reference": "0aa47557a3e99a1a8e47d64a275806f3db35f736"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/kwf-densajs/zipball/6e328b831c0cd8686907260e16f0bdce68a160ff",
-                "reference": "6e328b831c0cd8686907260e16f0bdce68a160ff",
+                "url": "https://api.github.com/repos/koala-framework/kwf-densajs/zipball/0aa47557a3e99a1a8e47d64a275806f3db35f736",
+                "reference": "0aa47557a3e99a1a8e47d64a275806f3db35f736",
                 "shasum": ""
             },
             "require": {
@@ -264,7 +264,7 @@
             "type": "library",
             "extra": {
                 "require-bower": {
-                    "densajs": "90d376a446bfb3c00d9b2b90d75afa269333c25b"
+                    "densajs": "e5499d26c19bb2086c1c27035d3bfb9a235539a7"
                 }
             },
             "autoload": {
@@ -278,7 +278,7 @@
             ],
             "description": "DensaJS Integration for Koala Framework",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2015-04-22 15:18:08"
+            "time": "2015-05-09 07:56:19"
         },
         {
             "name": "koala-framework/kwf-extjs",
@@ -286,12 +286,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/koala-framework/kwf-extjs.git",
-                "reference": "8f0cf6d76fca47ea059180d9b22f5e028aa646ce"
+                "reference": "998f001e2ba47b91007a00a83bbe166440225ec6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koala-framework/kwf-extjs/zipball/8f0cf6d76fca47ea059180d9b22f5e028aa646ce",
-                "reference": "8f0cf6d76fca47ea059180d9b22f5e028aa646ce",
+                "url": "https://api.github.com/repos/koala-framework/kwf-extjs/zipball/998f001e2ba47b91007a00a83bbe166440225ec6",
+                "reference": "998f001e2ba47b91007a00a83bbe166440225ec6",
                 "shasum": ""
             },
             "require": {
@@ -322,7 +322,7 @@
             ],
             "description": "ExtJS Integration for Koala Framework",
             "homepage": "http://www.koala-framework.org/",
-            "time": "2015-04-23 13:14:56"
+            "time": "2015-05-07 08:20:11"
         },
         {
             "name": "koala-framework/library-css3pie",
