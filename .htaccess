@@ -4,3 +4,7 @@ RewriteCond %{REQUEST_URI} !^/*(bootstrap.php)/?
 RewriteRule ^(.*)$ bootstrap.php [L]
 
 php_flag magic_quotes_gpc off
+
+<IfModule dir_module>
+    DirectorySlash Off
+</IfModule>

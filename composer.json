@@ -1,6 +1,6 @@
 {
     "require": {
-        "koala-framework/koala-framework": "3.8.*",
+        "koala-framework/koala-framework": "3.9.x-dev",
         "koala-framework/kwf-densajs": "~2.0",
         "koala-framework/kwf-extjs": "~2.0",
         "koala-framework/kwf-deftjs": "~2.0"
